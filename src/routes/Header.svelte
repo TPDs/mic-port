@@ -1,8 +1,6 @@
 <script>
 	import { page } from '$app/stores';
 	import logo from '$lib/images/mp icon.png';
-	import github from '$lib/images/github.svg';
-	import linkedin from '$lib/images/linked.png';
 </script>
 
 <header>
@@ -17,16 +15,16 @@
 			<nav>
 				<ul>
 					<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-						<a href="/">File</a>
+						<a href="/">News</a>
 					</li>
 					<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-						<a href="/">Edit</a>
+						<a href="/">Projects</a>
 					</li>
 					<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
 						<a href="/">Job</a>
 					</li>
-					<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-						<a href="/">About me</a>
+					<li aria-current={$page.url.pathname === '/aboutme' ? 'page' : undefined}>
+						<a href="/aboutme">About me</a>
 					</li>
 				</ul>
 			</nav>
@@ -62,37 +60,42 @@
 	header {
 		display: grid;
 		grid-template-columns:45px 1fr;
-		grid-template-rows: auto;	
-		box-shadow: 1px 1px;	
+		grid-template-rows: auto;
+		height: 60px;	
+		box-shadow: 1px 1px;
+		background: rgb(19, 17, 17);	
 	}
 
 	.logo  {
 		grid-column: 1;
 		grid-row: 1;
-		background-color: rgb(19, 17, 17);
+		
 		opacity: 0.8;
 		width: 3em;
 		height: 2em;
 		justify-self: center;
-		border: 1cap;
-		border-block-end: solid;
-		border-color: rgb(38, 87, 79);
+		padding-top: 15px;
+		padding-left: 25px;
+		
 		
 		}
 
 	.logo img {
 		justify-self: center;
 		max-width: 90%;
-		max-height: 90%;
-		padding-left: 5px;
-		padding-top: 2px;		
+		max-height: 90%;		
+		border-style: solid;
+		border-color: rgba(12, 227, 235, 0.7);		
 	}
 
 	.statusbar {
 		display: grid;
+		justify-self: center;
 		grid-template-columns: repeat(3, 2fr);	
 		grid-row: 1;
 		grid-column: 2;
+		height: 60px;
+		padding-top: 15px;
 		
 	}
 	.statusbar-row {				

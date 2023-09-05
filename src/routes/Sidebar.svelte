@@ -51,5 +51,6 @@
 		filter: invert(80%);
 		object-fit: contain;
 		box-shadow: 0px 1px;
+		color: rgba(12, 227, 235, 0.7);
 	}
 </style>
