@@ -5,8 +5,8 @@
 		Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	--font-mono: 'Fira Mono', monospace;
 	--color-bg-0: rgba(18, 18, 18);
-	--color-bg-1: rgb(73, 80, 78);
-	--color-theme-1: #000000;
+	--color-bg-1: rgb(3, 3, 3);
+	--color-theme-1: #f8f7f7;
 	--color-theme-2: #000000;
 	--color-text: rgba(12, 227, 235, 0.7);
 	--column-width: 42rem;
@@ -32,11 +32,17 @@ p {
 
 h1 {
 	font-size: 2rem;
-	text-align: center;
+	text-align: left;
+	text-underline-position: 20px;
 }
 
 h2 {
 	font-size: 1rem;
+	text-align: center;
+}
+h3 {
+	font-size: 1rem;
+	text-align: left;
 }
 
 sidebarstyle {

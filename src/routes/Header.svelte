@@ -7,8 +7,8 @@
 
 <header>
 	<div class="logo">
-		<a href="https://github.com/TPDs">
-			<img src={logo} alt="GitHub" />
+		<a href="/">
+			<img src={logo} alt="home" />
 		</a>
 	</div>
 
@@ -35,7 +35,7 @@
 			<nav>
 				<ul2>
 					<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-						<a>'MP code site'</a>
+						<b>'MP code site'</b>
 					</li>
 				</ul2>
 			</nav>
@@ -44,7 +44,13 @@
 			<nav>
 				<ul3>
 					<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-						<a>_ [] X</a>
+						<c>_</c>
+					</li>
+					<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
+						<c>[]</c>
+					</li>
+					<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
+						<c>X</c>
 					</li>
 				</ul3>
 			</nav>
@@ -56,7 +62,8 @@
 	header {
 		display: grid;
 		grid-template-columns:45px 1fr;
-		grid-template-rows: auto;		
+		grid-template-rows: auto;	
+		box-shadow: 1px 1px;	
 	}
 
 	.logo  {
@@ -70,6 +77,7 @@
 		border: 1cap;
 		border-block-end: solid;
 		border-color: rgb(38, 87, 79);
+		
 		}
 
 	.logo img {
@@ -85,6 +93,7 @@
 		grid-template-columns: repeat(3, 2fr);	
 		grid-row: 1;
 		grid-column: 2;
+		
 	}
 	.statusbar-row {				
 		text-align: center;
@@ -116,6 +125,7 @@
 		padding-left: 1em;
 		background: var(--background);
 		background-size: contain;
+		
 	}
 
 	ul2 {
@@ -139,7 +149,7 @@
 		justify-content: right;
 		align-items: left;
 		list-style: none;
-		padding-right: 3em;
+		padding-right: 0em;
 		background: var(--background);
 		background-size: contain;
 	}
@@ -165,5 +175,32 @@
 
 	a:hover {
 		color: var(--color-theme-1);
+		box-shadow: 0px 1px;
 	}
+	nav b {
+		display: flex;
+		height: 100%;
+		align-items: center;
+		padding: 0 2.5rem;
+		color: var(--color-text);
+		font-weight: 700;
+		font-size: 1.0rem;
+		text-transform: uppercase;
+		letter-spacing: 0.8em;
+		text-decoration: none;
+		
+	}
+	nav c {
+		display: flex;
+		height: 100%;
+		align-items: center;				
+		color: var(--color-text);
+		font-weight: 700;
+		font-size: 1.0rem;
+		text-transform: uppercase;
+		letter-spacing: 1.2em;
+		text-decoration: none;	
+		
+	}
+
 </style>

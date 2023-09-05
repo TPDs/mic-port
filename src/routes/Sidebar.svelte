@@ -25,7 +25,7 @@
 	.sidebar {
 		grid-column: 1;
 		grid-row: 2;
-		
+		padding-top: 350px;
 		width: 45px;
 		
 		
@@ -50,5 +50,6 @@
 	.sidebar img:hover {
 		filter: invert(80%);
 		object-fit: contain;
+		box-shadow: 0px 1px;
 	}
 </style>
