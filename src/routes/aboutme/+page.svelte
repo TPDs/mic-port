@@ -16,7 +16,7 @@
 		<img src={avatar} alt="Avatar" />
 	</avatar-img>
 	<about-txt>
-		Im a 36 young man, living in Cophagen Denmark with a flair for coding and all its wonders. <br
+		Im a 36 year old man, living in Cophagen Denmark with a flair for coding and all it wonders. <br
 		/>
 		I made this site to try and expose some of the areas that I want to learn and show others
 		<br /><br />
@@ -24,8 +24,14 @@
 		My Background:
 
 		<br /><br /><br />
-		2022-2023 &nbsp &nbsp - &nbsp &nbsp Professionsbachelor It-sikkerhed, KEA Guldbergsgade <br />
-		2019-2022 &nbsp &nbsp - &nbsp &nbsp Datamatiker, KEA Lygten 16 <br />
+		2022-2023 &nbsp &nbsp - &nbsp &nbsp
+		<a href="https://kompetence.kea.dk/uddannelser/it/diplom-i-it-sikkerhed"
+			>Bachelor in It-Security, KEA Guldbergsgade
+		</a> <br />
+		2019-2022 &nbsp &nbsp - &nbsp &nbsp
+		<a href="https://kea.dk/uddannelser/erhvervsakademi/datamatiker">
+			DataScience, KEA Lygten 16
+		</a> <br />
 		2017-2019 &nbsp &nbsp - &nbsp &nbsp HF, HF-Centret Efterslægten <br />
 		<br /><br />
 
@@ -80,5 +86,15 @@
 		grid-row-end: 3;
 		grid-column-start: 1;
 		grid-column-end: 1;
+	}
+
+	a:link,
+	a:visited {
+		color: rgba(12, 227, 235, 0.7);
+		text-decoration: none;
+	}
+	a:hover,
+	a:active {
+		background-color: rgba(12, 227, 235, 0.1);
 	}
 </style>
