@@ -24,7 +24,7 @@
 						<a href="/">Job</a>
 					</li>
 					<li aria-current={$page.url.pathname === '/aboutme' ? 'page' : undefined}>
-						<a href="/aboutme">About me</a>
+						<a href="/aboutme">About</a>
 					</li>
 				</ul>
 			</nav>
@@ -69,8 +69,7 @@
 
 	.logo  {
 		grid-column: 1;
-		grid-row: 1;
-		
+		grid-row: 1;		
 		opacity: 0.8;
 		width: 3em;
 		height: 2em;
