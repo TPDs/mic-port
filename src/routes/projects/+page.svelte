@@ -1,5 +1,20 @@
-<script lang="ts">
-    import type { PageData } from './$types';
-    
-    export let data: PageData;
+<script>
+	import './styles.css'
 </script>
+
+<svelte:head>
+	<title>MPcoded</title>
+	<meta name="description" content="MPcoded" />
+</svelte:head>
+
+<br /><br /><br />
+
+<mainsection>
+	<h1>Projects</h1>
+
+</mainsection>
+
+<style>
+
+
+</style>
