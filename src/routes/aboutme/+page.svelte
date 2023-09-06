@@ -30,7 +30,7 @@
 		</a> <br />
 		2019-2022 &nbsp &nbsp - &nbsp &nbsp
 		<a href="https://kea.dk/uddannelser/erhvervsakademi/datamatiker">
-			DataScience, KEA Lygten 16
+			Datascience, KEA Lygten
 		</a> <br />
 		2017-2019 &nbsp &nbsp - &nbsp &nbsp HF, HF-Centret Efterslægten <br />
 		<br /><br />
