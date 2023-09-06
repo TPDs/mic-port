@@ -10,3 +10,5 @@ node_modules
 .output
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+src/lib/div/cert.pem
+src/lib/div/key.pem

@@ -48,9 +48,9 @@
 		object-fit: contain;
 	}
 	.sidebar img:hover {
-		filter: invert(80%);
+		filter: invert(100%);
 		object-fit: contain;
 		box-shadow: 0px 1px;
-		color: rgba(12, 227, 235, 0.7);
+		color: rgba(243, 28, 20, 0.7); 
 	}
 </style>
