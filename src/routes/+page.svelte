@@ -1,15 +1,13 @@
 <script>
-	import Sidebar from './Sidebar.svelte';	
+	import './styles.css'
 </script>
 
 <svelte:head>
 	<title>MPcoded</title>
 	<meta name="description" content="MPcoded" />
 </svelte:head>
-<body>
-<sidebarstyle>
-	<Sidebar />
-</sidebarstyle>
+
+
 <br /><br /><br />
 
 
@@ -21,7 +19,7 @@
 	</h2>
 	<h3>5.Sep 2023 - Michael</h3>
 </mainsection>
-</body>
+
 <style>
 
 

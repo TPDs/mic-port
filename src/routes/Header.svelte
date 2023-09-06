@@ -63,7 +63,8 @@
 		grid-template-rows: auto;
 		height: 60px;	
 		box-shadow: 1px 1px;
-		background: rgb(19, 17, 17);	
+		background: rgb(19, 17, 17);
+		padding-right: 50px;	
 	}
 
 	.logo  {
