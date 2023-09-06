@@ -16,7 +16,7 @@
 		<img src={avatar} alt="Avatar" />
 	</avatar-img>
 	<about-txt>
-		Im Michael Petersen and im a 36 year old man, living in Cophagen Denmark with a flair for coding and all it wonders. <br
+		My name is Michael Petersen and im a 36 year old man living in Cophagen Denmark, with a flair for coding and all it wonders. <br
 		/>
 		I made this site to try and expose some of the areas that I want to learn and show others
 		<br /><br />
