@@ -18,10 +18,10 @@
 						<a href="/">News</a>
 					</li>
 					<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-						<a href="/projects">Projects</a>
+						<a href="/projectlist">Projects</a>
 					</li>
 					<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-						<a href="/">Job</a>
+						<a href="/jobpage">Job</a>
 					</li>
 					<li aria-current={$page.url.pathname === '/aboutme' ? 'page' : undefined}>
 						<a href="/aboutme">About</a>
