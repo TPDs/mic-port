@@ -4,7 +4,6 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	preprocess: vitePreprocess(),	
@@ -13,9 +12,9 @@ const config = {
 			out: 'build',
 			precompress: false,
 			envPrefix: '',
-			polyfill: true,
+			polyfill: flase,
 			csrf: {
-				checkOrigin: true,
+				checkOrigin: false,
 			}, 
 			
 		},
