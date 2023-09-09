@@ -1,6 +1,5 @@
 import { vitePreprocess } from '@sveltejs/kit/vite';
-import adapter from '@sveltejs/adapter-node'
-//import adapter from "svelte-adapter-bun";
+import adapter from "svelte-adapter-bun";
 import dotenv from 'dotenv';
 
 dotenv.config();
@@ -11,13 +10,12 @@ const config = {
 	preprocess: vitePreprocess(),	
 	kit: {			
 		adapter: adapter({
-			out: 'build',
-			precompress: false,
-			envPrefix: '',
-			polyfill: false,
-			csrf: {
-				checkOrigin: false,
-			}, 
+			out: "build",
+			assets: true,			
+			development: true,
+			// precompress: true,
+			dynamic_origin: true,
+			xff_depth: 1,
 			
 		},
 		),
