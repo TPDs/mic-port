@@ -18,6 +18,6 @@ const httpsOptions = {
 const app = express()
 
 app.use(handler)
+https.createServer(httpsOptions, app).listen(PORT)
 console.log("Loaded HTTPS config");
 
-https.createServer(httpsOptions, app).listen(PORT)

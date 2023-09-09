@@ -12,7 +12,7 @@ const config = {
 			out: 'build',
 			precompress: false,
 			envPrefix: '',
-			polyfill: true,
+			polyfill: false,
 			csrf: {
 				checkOrigin: false,
 			}, 
