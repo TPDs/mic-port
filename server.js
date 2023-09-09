@@ -8,8 +8,8 @@ import { handler } from './build/handler.js';
 
 dotenv.config();
 
-const sslkey = fs.readFileSync(env.PUBLIC_SSL_KEY)
-const sslcert = fs.readFileSync(env.PUBLIC_SSL_CERT)
+const sslkey = fs.readFileSync(env.key)
+const sslcert = fs.readFileSync(env.cert)
 const PORT = env.PUBLIC_SSL_PORT
 const httpsOptions = {
   key: sslkey,
