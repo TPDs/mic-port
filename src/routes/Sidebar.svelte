@@ -18,14 +18,15 @@
 	container {
 		display: grid;
 		grid-template-columns: 50px;	
-        width: 45px;	
+        width: 45px;
+		padding-top: 85px;	
 		
 	}
 
 	.sidebar {
 		grid-column: 1;
 		grid-row: 2;
-		padding-top: 350px;
+		padding-top: 300px;
 		width: 45px;
 		
 		

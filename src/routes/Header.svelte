@@ -59,34 +59,37 @@
 <style>
 	header {
 		display: grid;
-		grid-template-columns:45px 1fr;
+		grid-template-columns:150px 1fr;
 		grid-template-rows: auto;
-		height: 60px;	
+		height: 80px;	
 		box-shadow: 1px 1px;
 		background: rgb(19, 17, 17);
-		padding-right: 50px;	
+		padding-right: 150px;	
 	}
 
 	.logo  {
 		grid-column: 1;
-		grid-row: 1;		
-		opacity: 0.8;
-		width: 3em;
-		height: 2em;
-		justify-self: center;
+		grid-row: 1;				
+		justify-self: center;	
 		padding-top: 15px;
-		padding-left: 25px;
-		
-		
+		padding-left: 10px;	
 		}
 
-	.logo img {
-		justify-self: center;
-		max-width: 90%;
-		max-height: 90%;		
+	.logo img {		
+		max-width: 67%;
+		max-height: 67%;
+		opacity: 0.7;		
 		border-style: solid;
 		border-color: rgba(12, 227, 235, 0.7);		
 	}
+	.logo img:hover {	
+		max-width: 67%;
+		max-height: 67%;		
+		border-style: solid;
+		opacity: 0.6;		
+		border-color: rgba(12, 227, 235, 0.6);		
+	}
+
 
 	.statusbar {
 		display: grid;
@@ -95,7 +98,7 @@
 		grid-row: 1;
 		grid-column: 2;
 		height: 60px;
-		padding-top: 15px;
+		padding-top: 25px;
 		
 	}
 	.statusbar-row {				
@@ -176,9 +179,9 @@
 		transition: color 0.2s linear;
 	}
 
-	a:hover {
-		color: var(--color-theme-1);
-		box-shadow: 0px 1px;
+	.statusbar-row a:hover {
+		color: var(--color-text-hover);
+		box-shadow: 0px 0px 2px;
 	}
 	nav b {
 		display: flex;
