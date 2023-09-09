@@ -1,5 +1,5 @@
 import { vitePreprocess } from '@sveltejs/kit/vite';
-import adapter from "svelte-adapter-bun";
+import adapter from '@sveltejs/adapter-node'
 import dotenv from 'dotenv';
 
 dotenv.config();
@@ -7,26 +7,19 @@ dotenv.config();
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-	preprocess: vitePreprocess(),
-	kit: {
+	preprocess: vitePreprocess(),	
+	kit: {			
 		adapter: adapter({
-			out: "build",
-			assets: true,
-			development: true,
-			// precompress: true,
-			dynamic_origin: true,
-			xff_depth: 1,
-
+			out: 'build',
+			precompress: false,
+			envPrefix: '',
+			polyfill: false,
+			csrf: {
+				checkOrigin: false,
+			}, 
+			
 		},
-
-
 		),
-		server: {
-			https: {
-				key: fs.readFileSync(`src/lib/div/key.pem`),
-				cert: fs.readFileSync(`src/lib/div/cert/cert.pem`)
-			}
-		},
 	},
 };
 
