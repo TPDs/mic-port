@@ -15,7 +15,7 @@ const config = {
 			envPrefix: '',
 			polyfill: false,
 			csrf: {
-				checkOrigin: false,
+				checkOrigin: true,
 			}, 
 			
 		},
