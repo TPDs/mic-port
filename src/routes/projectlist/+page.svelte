@@ -12,21 +12,17 @@
 
 <aboutsection>
 	<h1>Projects</h1>
-	
-	First
-	Second
+	<h2>First Second <br>  First Second</h2>
 
 
-	<date-txt>
-		<h3>10.Sep 2023 - Michael</h3>
-	</date-txt>
+	<h3>10.Sep 2023 - Michael</h3>
 </aboutsection>
 
 <style>
 	aboutsection {
 		display: grid;
-		grid-template-rows: 50px 450px 250px;
-		grid-template-columns: 250px 650px 150px;
+		grid-template-rows: 50px 550px;
+		grid-template-columns: 250px 650px;
 		padding-top: 50px;
 		border-width: 2px;
 		padding: 10px;
@@ -40,5 +36,15 @@
 		box-shadow: 2px 2px #000000;
 	}
 
-	
+	aboutsection h3 {
+		grid-column: 1;
+		grid-row: 3;
+
+	}
+
+	aboutsection h2 {
+		grid-column: 2;
+		grid-row: 2;
+
+	}
 </style>
