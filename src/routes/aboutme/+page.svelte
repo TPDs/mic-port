@@ -1,5 +1,5 @@
 <script>
-	import '../styles.css';
+	import '../styles.css';	
 	import avatar from '$lib/images/avatar.png';
 </script>
 
