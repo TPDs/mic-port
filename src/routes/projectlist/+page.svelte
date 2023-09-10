@@ -21,7 +21,7 @@
 		I made this site to try and expose some of the areas that I want to learn and show others
 		<br /><br />
 		
-		My Background: 
+		My Background:
 
 		<br /><br /><br />
 		2022-2023 &nbsp &nbsp - &nbsp &nbsp
