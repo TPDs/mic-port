@@ -9,7 +9,7 @@ dotenv.config();
 
 const sslkey = fs.readFileSync(env.key)
 const sslcert = fs.readFileSync(env.cert)
-const PORT = env.PUBLIC_SSL_PORT
+const PORT = env.PORT
 const httpsOptions = {
   key: sslkey,
   cert: sslcert,
