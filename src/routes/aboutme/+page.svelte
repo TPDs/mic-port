@@ -10,7 +10,7 @@
 
 <br /><br /><br />
 
-<aboutsection>
+<mainsection>
 	<h1>Who am I</h1>
 	<avatar-img>
 		<img src={avatar} alt="Avatar" />
@@ -41,7 +41,7 @@
 	<date-txt>
 		<h3>5.Sep 2023 - Michael</h3>
 	</date-txt>
-</aboutsection>
+</mainsection>
 
 <style>
 	aboutsection {
@@ -80,8 +80,7 @@
 	}
 
 	date-txt {
-		justify-content: left;
-		padding-top: 80px;
+		justify-content: left;		
 		grid-row-start: 3;
 		grid-row-end: 3;
 		grid-column-start: 1;

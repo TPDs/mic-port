@@ -70,21 +70,21 @@
 	.logo  {
 		grid-column: 1;
 		grid-row: 1;				
-		justify-self: center;	
-		padding-top: 1em;
-		padding-left: 0em;	
+		justify-self: left;	
+		padding-top: 1.3em;
+		padding-left: 0.5em;	
 		}
 
+	
+
 	.logo img {		
-		max-width: 67%;
-		max-height: 67%;
+		max-width: 60%;
+		max-height: 60%;
 		opacity: 0.7;		
 		border-style: solid;
 		border-color: rgba(12, 227, 235, 0.7);		
 	}
-	.logo img:hover {	
-		max-width: 67%;
-		max-height: 67%;		
+	.logo img:hover {			
 		border-style: solid;
 		opacity: 0.6;		
 		border-color: rgba(12, 227, 235, 0.6);		

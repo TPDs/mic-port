@@ -26,8 +26,8 @@
 	.sidebar {
 		grid-column: 1;
 		grid-row: 2;
-		padding-top: 300px;
-		width: 45px;
+		padding-top: 20em;
+		width: 3em;
 		
 		
 	}
@@ -37,8 +37,8 @@
 		top: 0;
 		align-items: center;
 		justify-content: center;		
-		padding-left: 5px;
-		padding-top: 5px;
+		padding-left: 0.1em;
+		padding-top: 0.1em;
 		
 	}
 
