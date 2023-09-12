@@ -59,20 +59,20 @@
 <style>
 	header {
 		display: grid;
-		grid-template-columns:150px 1fr;
+		grid-template-columns:9em 1fr;
 		grid-template-rows: auto;
-		height: 80px;	
+		height: 5em;	
 		box-shadow: 1px 1px;
 		background: rgb(19, 17, 17);
-		padding-right: 150px;	
+		padding-right: 11em;	
 	}
 
 	.logo  {
 		grid-column: 1;
 		grid-row: 1;				
 		justify-self: center;	
-		padding-top: 15px;
-		padding-left: 10px;	
+		padding-top: 1em;
+		padding-left: 0em;	
 		}
 
 	.logo img {		
@@ -97,8 +97,8 @@
 		grid-template-columns: repeat(3, 2fr);	
 		grid-row: 1;
 		grid-column: 2;
-		height: 60px;
-		padding-top: 25px;
+		height: 3.5em;
+		padding-top: 1.4em;
 		
 	}
 	.statusbar-row {				
@@ -181,7 +181,7 @@
 
 	.statusbar-row a:hover {
 		color: var(--color-text-hover);
-		box-shadow: 0px 0px 2px;
+		box-shadow: 0em 0em  0.2em;
 	}
 	nav b {
 		display: flex;
