@@ -44,23 +44,6 @@
 </mainsection>
 
 <style>
-	aboutsection {
-		display: grid;
-		grid-template-rows: 50px 450px 250px;
-		grid-template-columns: 250px 650px 150px;
-		padding-top: 50px;
-		border-width: 2px;
-		padding: 10px;
-		align-self: center;
-		border-radius: 1rem;
-		height: 650px;
-		width: 1200px;
-		background: linear-gradient(110deg, rgba(43, 41, 41) 50%, rgba(12, 227, 235, 0.001));
-		border-color: #000000;
-		border-style: solid;
-		box-shadow: 2px 2px #000000;
-	}
-
 	avatar-img {
 		grid-row-start: 2;
 		grid-row-end: 2;
