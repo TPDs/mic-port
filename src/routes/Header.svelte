@@ -1,12 +1,12 @@
 <script>
 	import { page } from '$app/stores';
-	import logo from '$lib/images/mp icon.png';
+	import logo from '$lib/images/mp icon.png';	
 </script>
 
 <header>
-	<div class="logo">
-		<a href="/">
-			<img src={logo} alt="home" />
+	<div class="mylogo">
+		<a href="/">		
+			<img  src={logo} alt="home" />
 		</a>
 	</div>
 
@@ -33,7 +33,7 @@
 			<nav>
 				<ul2>
 					<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-						<b>'MP code site'</b>
+						<b>MP code</b>
 					</li>
 				</ul2>
 			</nav>
@@ -59,34 +59,35 @@
 <style>
 	header {
 		display: grid;
-		grid-template-columns:9em 1fr;
-		grid-template-rows: auto;
-		height: 5em;	
-		box-shadow: 1px 1px;
+		grid-template-columns:5em 1fr;
+		grid-template-rows: 7em;			
+		box-shadow: 0em 0.2em;
 		background: rgb(19, 17, 17);
-		padding-right: 11em;	
+		
 	}
 
-	.logo  {
+	.mylogo  {
 		grid-column: 1;
-		grid-row: 1;				
-		justify-self: left;	
-		padding-top: 1.3em;
-		padding-left: 0.5em;	
+		grid-row: 1;		
+		position: relative;	
+		z-index: 10;	
 		}
-
 	
-
-	.logo img {		
-		max-width: 60%;
-		max-height: 60%;
+	.mylogo img {
+		padding-top: 1.5em;
+		padding-left: 1em;
+		max-width: 100%;
+  		max-height: 100%;					
 		opacity: 0.7;		
 		border-style: solid;
-		border-color: rgba(12, 227, 235, 0.7);		
+		border-radius: 0.2em;
+		border-color: rgba(12, 227, 235, 0.7);
+		transition: all 0.5s		
 	}
-	.logo img:hover {			
+	.mylogo:hover img {							
 		border-style: solid;
-		opacity: 0.6;		
+		border-radius: 0.2em;
+		opacity: 0.9;		
 		border-color: rgba(12, 227, 235, 0.6);		
 	}
 
@@ -97,8 +98,9 @@
 		grid-template-columns: repeat(3, 2fr);	
 		grid-row: 1;
 		grid-column: 2;
-		height: 3.5em;
-		padding-top: 1.4em;
+		height: 5em;
+		padding-top: 2.5em;
+		
 		
 	}
 	.statusbar-row {				
@@ -108,21 +110,17 @@
 	nav {
 		grid-template-areas: header;
 		grid-column: 2;
-		grid-row: 1;
-		background-color: white;
-		justify-self: start;
-		border: 1cap;
+		grid-row: 1;		
+		justify-self: start;		
 		border-block-end: solid;
 		border-color: rgb(38, 87, 79);
-		justify-content: left;
+		justify-content: center;
 		opacity: 0.8;
 		--background: rgb(19, 17, 17);
 	}
 
 	ul {
 		position: relative;
-		padding: 0;
-		margin: 0;
 		height: 2em;
 		display: flex;
 		justify-content: left;
@@ -135,8 +133,7 @@
 	}
 
 	ul2 {
-		position: relative;
-		padding: 0;
+		position: relative;		
 		margin: 0;
 		height: 2em;
 		display: flex;
@@ -147,15 +144,13 @@
 		background-size: contain;
 	}
 	ul3 {
-		position: relative;
-		padding: 0;
+		position: relative;		
 		margin: 0;
 		height: 2em;
 		display: flex;
 		justify-content: right;
 		align-items: left;
-		list-style: none;
-		padding-right: 0em;
+		list-style: none;		
 		background: var(--background);
 		background-size: contain;
 	}
@@ -169,32 +164,33 @@
 		display: flex;
 		height: 100%;
 		align-items: center;
-		padding: 0 0.5rem;
+		padding: 0 1rem;
 		color: var(--color-text);
 		font-weight: 700;
-		font-size: 0.8rem;
+		font-size: 1rem;
 		text-transform: uppercase;
 		letter-spacing: 0.1em;
 		text-decoration: none;
-		transition: color 0.2s linear;
+		transition: color 0.2s linear;		
 	}
 
 	.statusbar-row a:hover {
 		color: var(--color-text-hover);
+		border-radius: 0.5em;
+		background-color: var(--color-box-hover);
 		box-shadow: 0em 0em  0.2em;
 	}
 	nav b {
-		display: flex;
-		height: 100%;
+		display: flex;		
 		align-items: center;
-		padding: 0 2.5rem;
+		padding: 0 6rem;
 		color: var(--color-text);
 		font-weight: 700;
 		font-size: 1.0rem;
 		text-transform: uppercase;
-		letter-spacing: 0.8em;
+		letter-spacing: 1.5em;
 		text-decoration: none;
-		
+				
 	}
 	nav c {
 		display: flex;

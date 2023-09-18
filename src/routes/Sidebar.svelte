@@ -17,17 +17,17 @@
 <style>
 	container {
 		display: grid;
-		grid-template-columns: 50px;	
+		grid-template-columns: 2em;	
         width: 45px;
-		padding-top: 85px;	
+		padding-top: 10em;	
 		
 	}
 
 	.sidebar {
 		grid-column: 1;
 		grid-row: 2;
-		padding-top: 20em;
-		width: 3em;
+		padding-top: 15em;
+		width: 2em;
 		
 		
 	}
@@ -38,7 +38,7 @@
 		align-items: center;
 		justify-content: center;		
 		padding-left: 0.1em;
-		padding-top: 0.1em;
+		
 		
 	}
 

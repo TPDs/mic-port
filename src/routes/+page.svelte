@@ -12,7 +12,7 @@
 
 
 <mainsection>
-	<h1>Welcome</h1>
+	<h1 class="italic">Welcome</h1>
 	<h2>
 		As you can see i am not a frontend developer, not that I don't care for it
 		<br />but as longs as it works <br /> <br /> Im happy :)
