@@ -74,19 +74,15 @@
 		}
 	
 	.mylogo img {
-		padding-top: 1.5em;
+		padding-top: 2em;	
 		padding-left: 1em;
 		max-width: 100%;
-  		max-height: 100%;					
-		opacity: 0.7;		
-		border-style: solid;
-		border-radius: 0.2em;
-		border-color: rgba(12, 227, 235, 0.7);
+  		max-height:100%;					
+		opacity: 0.7;	
+		border-color: rgba(12, 227, 235, 0.9);
 		transition: all 0.5s		
 	}
 	.mylogo:hover img {							
-		border-style: solid;
-		border-radius: 0.2em;
 		opacity: 0.9;		
 		border-color: rgba(12, 227, 235, 0.6);		
 	}

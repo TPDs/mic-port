@@ -12,10 +12,10 @@
 
 <mainsection>
 	<h1>Projects</h1>
-	<h2>First Second <br>  First Second</h2>
+	<about-txt>First Second <br>  First Second</about-txt>
 
 
-	<h3>10.Sep 2023 - Michael</h3>
+	<date-txt>10.Sep 2023 - Michael</date-txt>
 </mainsection>
 
 <style>

@@ -11,8 +11,8 @@
 
 <mainsection>
 	<h1>Job</h1>
-	<h2>Test 4</h2>
-
+	<about-txt>Test 4</about-txt>
+	<date-txt>18.Sep 2023 - Michael</date-txt>
 </mainsection>
 
 <style>

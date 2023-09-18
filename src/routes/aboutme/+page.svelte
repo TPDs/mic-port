@@ -44,39 +44,5 @@
 </mainsection>
 
 <style>
-	avatar-img {
-		grid-row-start: 2;
-		grid-row-end: 2;
-		grid-column-start: 1;
-		grid-column-end: 1;
-		border-radius: 50%;
-		padding-top: 50px;
-	}
 
-	about-txt {
-		justify-content: center;
-		grid-row-start: 2;
-		grid-row-end: 2;
-		grid-column-start: 2;
-		grid-column-end: 2;
-		padding-top: 80px;
-	}
-
-	date-txt {
-		justify-content: left;		
-		grid-row-start: 3;
-		grid-row-end: 3;
-		grid-column-start: 1;
-		grid-column-end: 1;
-	}
-
-	a:link,
-	a:visited {
-		color: rgba(12, 227, 235, 0.7);
-		text-decoration: none;
-	}
-	a:hover,
-	a:active {
-		background-color: rgba(12, 227, 235, 0.1);
-	}
 </style>
