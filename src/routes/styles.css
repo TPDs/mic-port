@@ -72,8 +72,7 @@ mainsection {
 	background: linear-gradient(180deg, rgba(43, 41, 41) 100%, rgba(12, 227, 235, 0.001));
 	border-color: #000000;
 	border-style: solid;	
-	
-	
+	overflow: hidden;	
 }
 
 avatar-img {
@@ -101,5 +100,13 @@ date-txt {
 	grid-row-end: 3;
 	grid-column-start: 1;
 	grid-column-end: 1;
+	text-underline-offset: 1em;
+	font-size: 1rem;
+	text-align: left;
+	text-decoration: underline;	
+	text-underline-position: above;	
+	letter-spacing: 0.1em;
+	padding-top: 1em;
+	
 }
 

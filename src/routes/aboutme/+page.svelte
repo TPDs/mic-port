@@ -25,11 +25,11 @@
 
 		<br /><br /><br />
 		2022-2023 &nbsp &nbsp - &nbsp &nbsp
-		<a href="https://kompetence.kea.dk/uddannelser/it/diplom-i-it-sikkerhed"
+		<a href="https://kompetence.kea.dk/uddannelser/it/diplom-i-it-sikkerhed" target="_blank" rel="noreferrer noopener"
 			>Bachelor in It-Security, KEA Guldbergsgade
 		</a> <br />
 		2019-2022 &nbsp &nbsp - &nbsp &nbsp
-		<a href="https://kea.dk/uddannelser/erhvervsakademi/datamatiker">
+		<a href="https://kea.dk/uddannelser/erhvervsakademi/datamatiker" target="_blank" rel="noreferrer noopener">
 			Datascience, KEA Lygten
 		</a> <br />
 		2017-2019 &nbsp &nbsp - &nbsp &nbsp HF, HF-Centret Efterslægten <br />
@@ -39,7 +39,7 @@
 	</about-txt>
 
 	<date-txt>
-		<h3>5.Sep 2023 - Michael</h3>
+		5.Sep 2023 - Michael
 	</date-txt>
 </mainsection>
 

@@ -100,7 +100,7 @@
 		grid-column: 2;
 		height: 5em;
 		padding-top: 2.5em;
-		padding-right: 5.5em;	
+		padding-right: 6em;	
 		
 	}
 	.statusbar-row {				
@@ -134,7 +134,7 @@
 		justify-content: left;
 		align-items: left;
 		list-style: none;
-		padding-left: 1em;
+		padding-left: 2em;
 		background: var(--background);
 		background-size: contain;
 		
@@ -164,6 +164,7 @@
 		list-style: none;		
 		background: var(--background);
 		background-size: contain;
+		padding-right: 2em;
 	}
 
 	li {
