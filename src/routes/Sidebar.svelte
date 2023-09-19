@@ -51,7 +51,7 @@
 	.sidebar img:hover {
 		filter: invert(100%);
 		object-fit: contain;
-		box-shadow: 0px 1px;
+		box-shadow: 0px 2px;
 		color: rgba(243, 28, 20, 0.7); 
 	}
 </style>

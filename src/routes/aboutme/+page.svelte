@@ -44,5 +44,14 @@
 </mainsection>
 
 <style>
+a:link,
+ a:visited {
+  color: rgba(12, 227, 235, 0.7);
+  text-decoration: none;
+}
 
+ a:hover,
+ a:active {
+  background-color: rgba(12, 227, 235, 0.1);
+}
 </style>

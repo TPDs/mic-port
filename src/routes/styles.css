@@ -94,6 +94,7 @@ about-txt {
 	padding-top: 80px;
 }
 
+
 date-txt {
 	justify-content: left;		
 	grid-row-start: 3;
@@ -102,12 +103,3 @@ date-txt {
 	grid-column-end: 1;
 }
 
-a:link,
-a:visited {
-	color: rgba(12, 227, 235, 0.7);
-	text-decoration: none;
-}
-a:hover,
-a:active {
-	background-color: rgba(12, 227, 235, 0.1);
-}
