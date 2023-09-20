@@ -81,6 +81,7 @@
   		max-height:90%;						
 		opacity: 0.7;
 		border: 5px solid;
+		border-radius: 5px;
 		border-color: cvar(--color-text);
 		transition: all 2.5;
 	
