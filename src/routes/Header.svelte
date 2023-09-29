@@ -8,11 +8,11 @@
 </script>
 
 <header>
-	<div class="mylogo">
+	<!-- <div class="mylogo">
 		<a href="/">		
 			<img  src={logo} alt="home" />
 		</a>
-	</div>
+	</div> -->
 
 	<div class="statusbar">		
 		<div class="statusbar-row">
