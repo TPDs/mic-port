@@ -1,6 +1,8 @@
 <script>
 	import './styles.css'
+	
 </script>
+
 
 <svelte:head>
 	<title>MPcoded</title>
@@ -12,7 +14,7 @@
 
 
 <mainsection>
-	<h1>Welcome</h1>
+	<h1mp>Welcome</h1mp>
 	<about-txt>
 		As you can see I am not a frontend developer, not that I don't care for it
 		<br />but as longs as it works <br /> <br /> Im happy :)

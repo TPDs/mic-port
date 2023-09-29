@@ -11,7 +11,7 @@
 <br /><br /><br />
 
 <mainsection>
-	<h1>Projects</h1>
+	<h1mp>Projects</h1mp>
 	<about-txt>First Second <br>  First Second</about-txt>
 
 

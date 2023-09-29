@@ -1,6 +1,6 @@
 <script>
 	import { page } from '$app/stores';
-	import logo from '$lib/images/mp icon.png';	
+	import logo from '$lib/images/mp icon.png';
 	import home from '$lib/images/menu/home.png';
 	import apps from '$lib/images/menu/apps.png';
 	import job from '$lib/images/menu/job.png';
@@ -14,20 +14,19 @@
 		</a>
 	</div> -->
 
-	<div class="statusbar">		
+	<div class="statusbar">
 		<div class="statusbar-row">
 			<nav>
 				<ul>
 					<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-						<a  href="/">
+						<a href="/">
 							<img src={home} alt="" />
-							News</a>
+							News</a
+						>
 					</li>
 					<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-						<a href="/projectlist">
-							<img src={apps} alt="" />Projects</a>
+						<a href="/projectlist"> <img src={apps} alt="" />Projects</a>
 					</li>
-
 				</ul>
 			</nav>
 		</div>
@@ -35,21 +34,19 @@
 			<nav>
 				<ul2>
 					<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-						<b>MP code</b> 
+						<b>MP code</b>
 					</li>
 				</ul2>
 			</nav>
 		</div>
 		<div class="statusbar-row">
 			<nav>
-				<ul3>			
+				<ul3>
 					<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-						<a href="/jobpage">
-							<img src={job} alt="" />Job</a>
+						<a href="/jobpage"> <img src={job} alt="" />Job</a>
 					</li>
 					<li aria-current={$page.url.pathname === '/aboutme' ? 'page' : undefined}>
-						<a href="/aboutme">
-							<img src={user} alt="" />About</a>
+						<a href="/aboutme"> <img src={user} alt="" />About</a>
 					</li>
 				</ul3>
 			</nav>
@@ -60,58 +57,53 @@
 <style>
 	header {
 		display: grid;
-		grid-template-columns:5em 1fr;
-		grid-template-rows:7em;			
+		grid-template-columns: 5em 1fr;
+		grid-template-rows: 7em;
 		box-shadow: 0em 0.2em;
 		background: rgb(19, 17, 17);
-		
 	}
 
-	.mylogo  {
+	/* .mylogo {
 		grid-column: 1;
-		grid-row: 1;		
-		position: relative;	
+		grid-row: 1;
+		position: relative;
 		z-index: 10;
-		padding-top: 2em;	
-		padding-left: 1em;		
-		}
-	
-	.mylogo img {				
+		padding-top: 2em;
+		padding-left: 1em;
+	}
+
+	.mylogo img {
 		max-width: 90%;
-  		max-height:90%;						
+		max-height: 90%;
 		opacity: 0.7;
 		border: 5px solid;
 		border-radius: 5px;
 		border-color: cvar(--color-text);
 		transition: all 2.5;
-	
 	}
-	.mylogo img:hover {							
-		opacity: 0.8;	
-		border: 5px solid;	
-		border-color: cvar(--color-text);		
-	}
-
+	.mylogo img:hover {
+		opacity: 0.8;
+		border: 5px solid;
+		border-color: cvar(--color-text);
+	} */
 
 	.statusbar {
 		display: grid;
 		justify-self: center;
-		grid-template-columns: 2fr 2fr 2fr;	
+		grid-template-columns: 2fr 2fr 2fr;
 		grid-row: 1;
 		grid-column: 2;
 		height: 5em;
 		padding-top: 2.5em;
-		padding-right: 6em;	
-		
+		padding-right: 6em;
 	}
-	.statusbar-row {				
+	.statusbar-row {
 		text-align: center;
 	}
 
-
-	.statusbar-row  img{				
+	.statusbar-row img {
 		height: 60%;
-		width: 60%;		
+		width: 60%;
 		padding-right: 0.5em;
 		padding-bottom: 0.15em;
 	}
@@ -119,8 +111,8 @@
 	nav {
 		grid-template-areas: header;
 		grid-column: 2;
-		grid-row: 1;		
-		justify-self: start;		
+		grid-row: 1;
+		justify-self: start;
 		border-block-end: solid;
 		border-color: rgb(38, 87, 79);
 		justify-content: center;
@@ -138,11 +130,10 @@
 		padding-left: 2em;
 		background: var(--background);
 		background-size: contain;
-		
 	}
 
 	ul2 {
-		position: relative;		
+		position: relative;
 		margin: 0;
 		height: 2em;
 		display: flex;
@@ -153,16 +144,14 @@
 		background-size: contain;
 	}
 
-
-
 	ul3 {
-		position: relative;		
+		position: relative;
 		margin: 0;
 		height: 2em;
 		display: flex;
 		justify-content: right;
 		align-items: left;
-		list-style: none;		
+		list-style: none;
 		background: var(--background);
 		background-size: contain;
 		padding-right: 2em;
@@ -172,7 +161,6 @@
 		position: relative;
 		height: 100%;
 	}
-
 
 	nav a {
 		display: flex;
@@ -186,17 +174,23 @@
 		letter-spacing: 0.1em;
 		text-decoration: none;
 		transition: color 0.2s linear;		
+		-webkit-transition: all 0.5s ease-out;
+		-moz-transition: all 0.5s ease-out;
+		-o-transition: all 0.5s ease-out;
+		-ms-transition: all 0.5s  ease-out;
+		transition: all 0.5s ease-out;
 	}
 
 	.statusbar-row a:hover {
 		color: var(--color-text-hover);
 		border-radius: 0.5em;
 		background-color: var(--color-box-hover);
-		box-shadow: 0em 0em  0.2em;
+		box-shadow: 0em 0em 0.2em;
 		text-shadow: -15px 40px 2px var(--color-box-hover);
+
 	}
 	nav b {
-		display: flex;		
+		display: flex;
 		align-items: center;
 		padding: 0 6rem;
 		color: var(--color-text);
@@ -206,7 +200,5 @@
 		letter-spacing: 1em;
 		text-decoration: none;
 		text-shadow: 0px 40px 2px var(--color-box-hover);
-				
 	}
-
 </style>

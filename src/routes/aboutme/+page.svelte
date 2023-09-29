@@ -11,7 +11,7 @@
 <br /><br /><br />
 
 <mainsection>
-	<h1>Who am I</h1>
+	<h1mp>Who am I</h1mp>
 	<avatar-img>
 		<img src={avatar} alt="Avatar" />
 	</avatar-img>
