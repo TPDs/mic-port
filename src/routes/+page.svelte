@@ -10,8 +10,7 @@
 </svelte:head>
 
 
-<br /><br /><br />
-
+<br/>
 
 <mainsection>
 	<h1mp>Welcome</h1mp>
