@@ -59,13 +59,13 @@ sidebarstyle {
 
 mainsection {	
 	display: grid;
-	grid-template-rows: 4rem 35rem 4rem;	
+	grid-template-rows: 4vh 70vh 2vh;	
 	grid-template-columns: 15rem 40rem;
 	border-width: 0.0em;		
 	padding: 1.5em;
 	align-self: center;
 	border-radius: 0.2rem;
-	height: 48rem;		
+	height: 85vh;		
 	width: 80rem;
 	background: linear-gradient(180deg, rgb(43, 40, 40) 100%, rgba(27,27,27));
 	border-style: solid;
@@ -104,7 +104,8 @@ date-txt {
 	text-decoration: underline;	
 	text-underline-position: above;	
 	letter-spacing: 0.1em;
-	padding-top: 4em;
+	padding-top: 1vh;
+	
 	
 }
 

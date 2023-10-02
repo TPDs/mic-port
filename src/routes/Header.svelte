@@ -107,8 +107,8 @@
 		margin: 0;
 		height: 2rem;
 		display: flex;
-		justify-content: right;
-		align-items: left;
+		justify-content: center;
+		align-items: center;
 		list-style: none;
 		background: var(--background);
 		background-size: contain;
@@ -124,10 +124,6 @@
 		list-style: none;
 		background: var(--background);
 		background-size: contain;
-	}
-
-	li {
-		position: relative;
 	}
 
 	nav a {
@@ -156,16 +152,15 @@
 		box-shadow: 0em 0em 0.2em;
 		text-shadow: -1rem 2.2rem 0.1rem var(--color-box-hover);
 	}
-	nav b {		
-		display: flex;
-		align-items: center;
+	nav b {					
 		color: var(--color-text);
 		font-weight: 700;
 		font-size: 1rem;
 		text-transform: uppercase;
-		letter-spacing: 0.1em;
+		letter-spacing: 0.5em;
 		text-decoration: none;
-		text-shadow: 0rem 2.5rem 0.1rem var(--color-box-hover);
+		padding-right: 1rem;
+		text-shadow: 0rem 2.2rem 0.1rem var(--color-box-hover);
 	}
 
 	@media only screen and (max-width: 768px) {
