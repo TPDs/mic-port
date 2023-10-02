@@ -3,14 +3,11 @@
 	
 </script>
 
-
 <svelte:head>
 	<title>MPcoded</title>
 	<meta name="description" content="MPcoded" />
 </svelte:head>
 
-
-<br/>
 
 <mainsection>
 	<h1mp>Welcome</h1mp>

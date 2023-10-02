@@ -7,6 +7,7 @@
 
 <div class="app">
 	<Header />
+	<br>
 	<sidebarstyle>
 		<Sidebar />
 	</sidebarstyle>
@@ -17,8 +18,7 @@
 <style>
 	.app {
 		display: flex;
-		flex-direction: column;
-		min-height: 100vh;
+		flex-direction: column;		
 		}
 
 </style>

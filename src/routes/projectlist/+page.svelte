@@ -8,7 +8,7 @@
 	<meta name="description" content="MPcoded" />
 </svelte:head>
 
-<br /><br /><br />
+
 
 <mainsection>
 	<h1mp>Projects</h1mp>

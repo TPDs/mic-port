@@ -7,7 +7,7 @@
 	<meta name="Project" content="MPcoded" />
 </svelte:head>
 
-<br /><br /><br />
+
 
 <mainsection>
 	<h1mp>Job</h1mp>

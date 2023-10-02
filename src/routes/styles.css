@@ -14,9 +14,8 @@
 	color: var(--color-text);
 }
 
-body {
-	min-height: 100vh;
-	margin: 0;
+body {	
+	
 	background: linear-gradient(360deg, rgba(27,27,27) 85%, rgba(27,27,27));
 	
 }
@@ -58,21 +57,20 @@ sidebarstyle {
 	padding-left: 0.5rem;	
 }
 
-mainsection {
+mainsection {	
 	display: grid;
-	grid-template-rows: 4em 35em 4em;	
-	grid-template-columns: 15em 40em;
+	grid-template-rows: 4rem 35rem 4rem;	
+	grid-template-columns: 15rem 40rem;
 	border-width: 0.0em;		
 	padding: 1.5em;
 	align-self: center;
 	border-radius: 0.2rem;
-	height: 48em;		
-	width: 80em;
+	height: 48rem;		
+	width: 80rem;
 	background: linear-gradient(180deg, rgb(43, 40, 40) 100%, rgba(27,27,27));
 	border-style: solid;
 	border: rgba(27,27,27);	
-	overflow: hidden;		
-	
+	overflow: hidden;	
 }
 
 avatar-img {
@@ -108,5 +106,45 @@ date-txt {
 	letter-spacing: 0.1em;
 	padding-top: 4em;
 	
+}
+
+@media only screen and (max-width: 768px) {
+    :root {
+        max-height: fit-content;
+		max-height: fit-content;
+    }
+
+    body {
+        max-height: fit-content;
+		max-height: fit-content;
+    }
+
+    mainsection {
+        /* Adjust mainsection styles for mobile */
+        grid-template-columns: 1fr; /* Single column layout for mobile */
+        width: auto; /* Allow the width to adjust as needed */
+        padding: 1em; /* Adjust padding for spacing on mobile */
+        text-align: center; /* Center content within mainsection */
+    }
+
+    avatar-img, about-txt {
+        /* Adjust styles for avatar and about text for mobile */
+        grid-row-start: auto;
+        grid-row-end: auto;
+        grid-column-start: auto;
+        grid-column-end: auto;
+        text-align: center; /* Center content for mobile */
+        padding-top: 20px; /* Adjust padding for spacing on mobile */
+    }
+
+    date-txt {
+        /* Adjust styles for date text for mobile */
+        grid-row-start: auto;
+        grid-row-end: auto;
+        grid-column-start: auto;
+        grid-column-end: auto;
+        text-align: center; /* Center date text for mobile */
+        padding-top: 1em; /* Adjust padding for spacing on mobile */
+    }
 }
 
