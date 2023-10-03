@@ -15,12 +15,10 @@
 	<h1mp>Projects</h1mp>
 	<about-txt>	<ul>
 		{#each data.records as post}
-			<li>
-				<a href="/">
+			<li>			
 					{post.name}
 					{post.about_text}
-				</a>
-			</li>
+							</li>
 		{/each}
 	</ul></about-txt>
 
