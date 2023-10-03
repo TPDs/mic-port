@@ -1,8 +1,7 @@
 <script lang="ts">
-	import type { PageData } from './$types';	
+	import type { PageData } from './$types';
 	export let data: PageData;
-	import '../styles.css';	
-			
+	import '../styles.css';
 </script>
 
 <svelte:head>
@@ -10,24 +9,21 @@
 	<meta name="description" content="MPcoded" />
 </svelte:head>
 
-
 <mainsection>
 	<h1mp>Projects</h1mp>
-	<about-txt>	<ul>
-		{#each data.records as post}
-			<li>			
+	<about-txt>
+		<ul>
+			{#each data.records as post}
+				<li>
 					{post.name}
 					{post.about_text}
-							</li>
-		{/each}
-	</ul></about-txt>
-
+				</li>
+			{/each}
+		</ul></about-txt
+	>
 
 	<date-txt>10.Sep 2023 - Michael</date-txt>
 </mainsection>
 
 <style>
-
-
-
 </style>
