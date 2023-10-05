@@ -2,6 +2,7 @@
 	import type { PageData } from './$types';
 	export let data: PageData;
 	import '../styles.css';
+	console.log(data.records);
 </script>
 
 <svelte:head>
