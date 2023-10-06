@@ -1,12 +1,14 @@
 import fs from 'fs';
-import { env } from 'process';
+import { env } from '$env/dynamic/public';
 import dotenv from 'dotenv';
 import https from 'https';
 import express from "express"
 import { handler } from './build/handler.js';
 
-dotenv.config();
 
+dotenv.config('');
+
+console.log(env.PUBLIC_PB_URL);
 
 const sslkey = fs.readFileSync(env.key)
 const sslcert = fs.readFileSync(env.cert)
