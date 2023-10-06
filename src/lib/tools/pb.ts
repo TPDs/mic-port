@@ -3,6 +3,8 @@ import { env } from '$env/dynamic/public';
 
 console.log('***********');
 console.log(env.PUBLIC_PB_URL);
+console.log(env.PUBLIC_PB_ADMIN);
+console.log(env.PUBLIC_PB_PW);
 console.log('***********');
 
 export const pb = new PocketBase(env.PUBLIC_PB_URL);
