@@ -16,7 +16,7 @@
 	<about-txt>
 		<ul>
 			{#each data.records as post}
-				<li> <a data-sveltekit-preload-data="tap" href={post.url}> Link </a>
+				<li> <a href={post.url}> Link </a>
 					{post.name}
 					{post.about_text}  
 				</li>
