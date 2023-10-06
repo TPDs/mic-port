@@ -1,6 +1,6 @@
 <script lang="ts">
-	import type { PageData } from './$types';
-	export let data: PageData;
+	import type { PageData, PageServerData, PageServerLoad } from './$types';
+	export let data: PageServerData;	
 	import '../styles.css';
 	console.log(data.records);
 		
