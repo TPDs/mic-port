@@ -5,8 +5,8 @@ import https from 'https';
 import express from "express"
 import { handler } from './build/handler.js';
 
-//dotenv.config();
-require('dotenv').config()
+dotenv.config();
+
 
 const sslkey = fs.readFileSync(env.key)
 const sslcert = fs.readFileSync(env.cert)
