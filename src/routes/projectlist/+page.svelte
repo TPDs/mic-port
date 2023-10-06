@@ -2,7 +2,8 @@
 	import type { PageData } from './$types';
 	export let data: PageData;
 	import '../styles.css';
-	console.log(data);
+	console.log(data.records);
+		
 </script>
 
 <svelte:head>
@@ -15,9 +16,9 @@
 	<about-txt>
 		<ul>
 			{#each data.records as post}
-				<li>
+				<li> <a data-sveltekit-preload-data="tap" href={post.url}> Link </a>
 					{post.name}
-					{post.about_text}
+					{post.about_text}  
 				</li>
 			{/each}
 		</ul></about-txt
