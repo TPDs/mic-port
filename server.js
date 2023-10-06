@@ -4,6 +4,7 @@ import dotenv from 'dotenv';
 import https from 'https';
 import express from "express"
 import { handler } from './build/handler.js';
+import path from 'path';
 
 dotenv.config();
 
