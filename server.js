@@ -7,9 +7,12 @@ import { handler } from './build/handler.js';
 
 dotenv.config();
 
+const envFile = path.resolve(__dirname, '.env');
+const envConfig = dotenv.parse(fs.readFileSync(envFile));
 
-console.log(PUBLIC_PB_ADMIN);
-console.log(PUBLIC_PB_URL);
+for (const key in envConfig) {
+  process.env[key] = envConfig[key];
+}
 
 const sslkey = fs.readFileSync(env.key)
 const sslcert = fs.readFileSync(env.cert)
