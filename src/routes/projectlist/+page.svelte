@@ -1,9 +1,7 @@
 <script lang="ts">
-	import type { PageData, PageServerData, PageServerLoad } from './$types';
+	import type { PageServerData } from './$types';
 	export let data: PageServerData;	
-	import '../styles.css';
-	console.log(data.records);
-		
+	import '../styles.css';		
 </script>
 
 <svelte:head>
