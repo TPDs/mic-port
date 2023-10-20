@@ -1,5 +1,4 @@
 import { pb } from '$lib/tools/pb';
-import { env } from '$env/dynamic/public';
 import type { Handle } from '@sveltejs/kit';
 
 /** @type {import('@sveltejs/kit').Handle} */
