@@ -61,7 +61,7 @@
 		display: grid;
 		justify-self: center;
 		position: relative;
-		grid-template-columns: 20rem 10rem 20rem;
+		grid-template-columns: 20rem 20rem 20rem;
 		grid-row: 1;
 		grid-column: 1;
 		padding-top: 1rem;
@@ -86,7 +86,7 @@
 		border-block-end: solid;
 		border-color: rgb(38, 87, 79);
 		justify-content: center;
-		opacity: 0.8;
+		opacity: 0.6;
 		--background: rgb(19, 17, 17);
 	}
 
@@ -94,10 +94,8 @@
 		position: relative;
 		height: 2rem;
 		display: flex;
-		justify-content: left;
-		align-items: left;
-		list-style: none;
-		padding-left: 2rem;
+		justify-content: left;		
+		list-style: none;		
 		background: var(--background);
 		background-size: contain;
 	}
@@ -109,7 +107,8 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		list-style: none;
+		padding-left: 4rem;
+		list-style: none;		
 		background: var(--background);
 		background-size: contain;
 	}
@@ -119,9 +118,8 @@
 		margin: 0;
 		height: 2rem;
 		display: flex;
-		justify-content: left;
-		align-items: left;
-		list-style: none;
+		justify-content: right;		
+		list-style: none;		
 		background: var(--background);
 		background-size: contain;
 	}

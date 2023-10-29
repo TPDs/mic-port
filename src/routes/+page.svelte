@@ -1,6 +1,7 @@
-<script>
+<script lang="ts">
 	import './styles.css'
-	
+	import { ListBox, ListBoxItem } from '@skeletonlabs/skeleton';
+	let valueSingle: string = 'books';
 </script>
 
 <svelte:head>
@@ -10,7 +11,9 @@
 
 
 <mainsection>
-	<h1mp>Welcome</h1mp>
+	<h1mp>Welcome</h1mp>	
+
+	
 	<about-txt>
 		As you can see I am not a frontend developer, not that I don't care for it
 		<br />but as longs as it works <br /> <br /> Im happy :)

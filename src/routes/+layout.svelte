@@ -1,24 +1,27 @@
 <script>
+	import '../app.postcss';
+	import '../app.postcss';
+	import '../app.postcss';
+	import '../app.postcss';
 	import Header from './Header.svelte';
 	import './styles.css';
-	import "../app.css";
+	import '../app.postcss';
 	import Sidebar from './Sidebar.svelte';
 </script>
 
 <div class="app">
 	<Header />
-	<br>
+	<br />
 	<sidebarstyle>
 		<Sidebar />
 	</sidebarstyle>
 
-	<slot></slot>
+	<slot />
 </div>
 
 <style>
 	.app {
 		display: flex;
-		flex-direction: column;		
-		}
-
+		flex-direction: column;
+	}
 </style>
