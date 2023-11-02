@@ -1,8 +1,4 @@
 <script>
-	import '../app.postcss';
-	import '../app.postcss';
-	import '../app.postcss';
-	import '../app.postcss';
 	import Header from './Header.svelte';
 	import './styles.css';
 	import '../app.postcss';
@@ -21,7 +17,8 @@
 
 <style>
 	.app {
-		display: flex;
+		display: flex;		
 		flex-direction: column;
+		
 	}
 </style>

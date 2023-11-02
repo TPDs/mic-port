@@ -28,7 +28,7 @@
 			<nav>
 				<ul2>
 					<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-						<b>MP code</b>
+						<b>TP code</b>
 					</li>
 				</ul2>
 			</nav>
@@ -51,10 +51,13 @@
 <style>
 	header {
 		display: grid;
+		width: 80rem;	
+		align-self: center;
 		grid-template-columns: auto;
-		grid-template-rows: 5rem;
-		box-shadow: 0rem 0.2rem;
-		background: rgb(19, 17, 17);
+		grid-template-rows: 4rem;		
+		background: var(--color-box);
+		border-radius: 0.01rem;
+		
 	}
 
 	.statusbar {
@@ -64,7 +67,7 @@
 		grid-template-columns: 20rem 20rem 20rem;
 		grid-row: 1;
 		grid-column: 1;
-		padding-top: 1rem;
+		padding-top: 1.5rem;
 		
 	}
 	.statusbar-row {
@@ -83,11 +86,10 @@
 		grid-column: 2;
 		grid-row: 1;
 		justify-self: start;
-		border-block-end: solid;
-		border-color: rgb(38, 87, 79);
+		border-block-end: solid;		
 		justify-content: center;
-		opacity: 0.6;
-		--background: rgb(19, 17, 17);
+		opacity: 0.7;
+		--background: var(--color-box);
 	}
 
 	ul {
@@ -95,9 +97,8 @@
 		height: 2rem;
 		display: flex;
 		justify-content: left;		
-		list-style: none;		
-		background: var(--background);
-		background-size: contain;
+		list-style: none;	
+
 	}
 
 	ul2 {
@@ -108,9 +109,8 @@
 		justify-content: center;
 		align-items: center;
 		padding-left: 4rem;
-		list-style: none;		
-		background: var(--background);
-		background-size: contain;
+		list-style: none;	
+	
 	}
 
 	ul3 {
@@ -120,8 +120,6 @@
 		display: flex;
 		justify-content: right;		
 		list-style: none;		
-		background: var(--background);
-		background-size: contain;
 	}
 
 	nav a {
@@ -148,17 +146,17 @@
 		border-radius: 0.5em;
 		background-color: var(--color-box-hover);
 		box-shadow: 0em 0em 0.2em;
-		text-shadow: -1rem 2.2rem 0.1rem var(--color-box-hover);
+		/* text-shadow: -1rem 6rem 0rem var(--color-box-hover); */
 	}
 	nav b {					
 		color: var(--color-text);
-		font-weight: 700;
-		font-size: 1rem;
+		font-weight: 800;
+		font-size: 1.2rem;		
 		text-transform: uppercase;
 		letter-spacing: 0.5em;
 		text-decoration: none;
 		padding-right: 1rem;
-		text-shadow: 0rem 2.2rem 0.1rem var(--color-box-hover);
+		/* text-shadow: 0rem 2rem 0.1rem var(--color-box-hover); */
 	}
 
 	@media only screen and (max-width: 768px) {
