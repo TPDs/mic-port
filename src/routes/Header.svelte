@@ -51,13 +51,12 @@
 <style>
 	header {
 		display: grid;
-		width: 80rem;	
+		width: 80rem;
 		align-self: center;
 		grid-template-columns: auto;
-		grid-template-rows: 4rem;		
+		grid-template-rows: 4rem;
 		background: var(--color-box);
 		border-radius: 0.01rem;
-		
 	}
 
 	.statusbar {
@@ -68,7 +67,6 @@
 		grid-row: 1;
 		grid-column: 1;
 		padding-top: 1.5rem;
-		
 	}
 	.statusbar-row {
 		text-align: center;
@@ -86,7 +84,7 @@
 		grid-column: 2;
 		grid-row: 1;
 		justify-self: start;
-		border-block-end: solid;		
+		border-block-end: solid;
 		justify-content: center;
 		opacity: 0.7;
 		--background: var(--color-box);
@@ -96,9 +94,8 @@
 		position: relative;
 		height: 2rem;
 		display: flex;
-		justify-content: left;		
-		list-style: none;	
-
+		justify-content: left;
+		list-style: none;
 	}
 
 	ul2 {
@@ -109,8 +106,7 @@
 		justify-content: center;
 		align-items: center;
 		padding-left: 4rem;
-		list-style: none;	
-	
+		list-style: none;
 	}
 
 	ul3 {
@@ -118,8 +114,8 @@
 		margin: 0;
 		height: 2rem;
 		display: flex;
-		justify-content: right;		
-		list-style: none;		
+		justify-content: right;
+		list-style: none;
 	}
 
 	nav a {
@@ -148,75 +144,80 @@
 		box-shadow: 0em 0em 0.2em;
 		/* text-shadow: -1rem 6rem 0rem var(--color-box-hover); */
 	}
-	nav b {					
-		color: var(--color-text);
-		font-weight: 800;
-		font-size: 1.2rem;		
-		text-transform: uppercase;
-		letter-spacing: 0.5em;
-		text-decoration: none;
+	nav b {
+		font-size: 1.5rem;
+		font-weight: 700;
+		letter-spacing: 0.1rem;
+		text-transform: uppercase;		
+		text-align: center;
+		margin: auto;
+		white-space: nowrap;		
 		padding-right: 1rem;
-		/* text-shadow: 0rem 2rem 0.1rem var(--color-box-hover); */
+	}
+
+	nav b:before {
+		background-color: var(--color-text-hover);
+		content: '';
+		display: block;			
+		height: 3px;
+		width:7.4rem;
+		border: rgba(43, 40, 40,0.7);
+		border-radius: 0.5em;
+		border-style: solid;
+		
 	}
 
 	@media only screen and (max-width: 768px) {
-    .statusbar {
-		width: 50%;
-        grid-template-columns: 1fr 1fr; /* Single column layout for mobile */
-        grid-template-rows: auto; /* Allow rows to size based on content */
-        justify-content: center; /* Center the content */
-        padding: 0rem; /* Adjust padding for spacing on mobile */
-        text-align: center; /* Center text in the statusbar */
-		
-    }
+		.statusbar {
+			width: 50%;
+			grid-template-columns: 1fr 1fr; /* Single column layout for mobile */
+			grid-template-rows: auto; /* Allow rows to size based on content */
+			justify-content: center; /* Center the content */
+			padding: 0rem; /* Adjust padding for spacing on mobile */
+			text-align: center; /* Center text in the statusbar */
+		}
 
-    .statusbar-row {
-        margin: 0.5rem 0; /* Add vertical margin for spacing between rows */
-		
-    }
+		.statusbar-row {
+			margin: 0.5rem 0; /* Add vertical margin for spacing between rows */
+		}
 
-    .statusbar-row img {
-        width: 25%; /* Adjust image size for mobile */
-        height: auto; /* Allow height to adjust proportionally */
-        margin: 0rem; /* Add some margin for spacing */
-    }
+		.statusbar-row img {
+			width: 25%; /* Adjust image size for mobile */
+			height: auto; /* Allow height to adjust proportionally */
+			margin: 0rem; /* Add some margin for spacing */
+		}
 
-    nav {
-        grid-column: 1; /* Place the navigation below the statusbar */
-        grid-row: 2; /* Adjust row placement for navigation */
-        border: none; /* Remove the border on mobile */
-		
-    }
+		nav {
+			grid-column: 1; /* Place the navigation below the statusbar */
+			grid-row: 2; /* Adjust row placement for navigation */
+			border: none; /* Remove the border on mobile */
+		}
 
-	nav a {
-		display: flex;		
-		align-items: center;
-		color: var(--color-text);
-		font-weight: 700;
-		font-size: 1rem;
-		text-transform: uppercase;
-		border: none; /* Remove the border on mobile */							
+		nav a {
+			display: flex;
+			align-items: center;
+			color: var(--color-text);
+			font-weight: 700;
+			font-size: 1rem;
+			text-transform: uppercase;
+			border: none; /* Remove the border on mobile */
+		}
 
+		ul {
+			justify-content: center; /* Center the navigation items */
+			padding-left: 0; /* Remove left padding */
+		}
+		li {
+			width: 35%;
+			height: 50%;
+		}
+
+		nav a {
+			padding: 0rem 1.5rem 1.5rem 0.5rem; /* Adjust padding for touch-friendly tap areas */
+		}
+
+		nav b {
+			text-shadow: none; /* Remove text shadow for mobile */
+		}
 	}
-
-    ul {
-        justify-content: center; /* Center the navigation items */
-        padding-left: 0; /* Remove left padding */
-		
-		
-    }
-	li {   		     
-        width: 35%;
-		height: 50%;
-    }
-
-    nav a {
-        padding: 0rem 1.5rem 1.5rem 0.5rem; /* Adjust padding for touch-friendly tap areas */
-		
-    }
-    
-    nav b {
-        text-shadow: none; /* Remove text shadow for mobile */
-    }
-}
 </style>
