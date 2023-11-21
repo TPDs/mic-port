@@ -123,9 +123,9 @@
 		padding: 0 1rem;
 		color: var(--color-text);
 		font-weight: 700;
-		font-size: 1rem;
+		font-size: 1.2rem;
 		text-transform: uppercase;
-		letter-spacing: 0.1rem;
+		letter-spacing: 0.2rem;
 		text-decoration: none;
 		transition: color 0.2s linear;
 		-webkit-transition: all 0.5s ease-out;

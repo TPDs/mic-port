@@ -17,9 +17,8 @@
 <style>
 	container {
 		display: grid;
-		grid-template-columns: 2em;	
-        width: 45px;
-		padding-top: 10em;	
+		grid-template-columns: 2em;	        
+		padding-top: 5em;	
 		
 	}
 
@@ -27,7 +26,7 @@
 		grid-column: 1;
 		grid-row: 2;
 		padding-top: 15em;
-		width: 2em;
+		width: 2.2em;  /* Styre size af icons */
 		
 		
 	}
@@ -37,21 +36,17 @@
 		top: 0;
 		align-items: center;
 		justify-content: center;		
-		padding-left: 0.1em;
-		
+		padding-left: 0.1em;	
 		
 	}
 
-	.sidebar img {
-		width: 2em;
-		height: 3em;
+	.sidebar img {		
 		filter: invert(60%);
 		object-fit: contain;
 	}
 	.sidebar img:hover {
 		filter: invert(100%);
-		object-fit: contain;
-		box-shadow: 0px 2px;
+		object-fit: contain;		
 		color: rgba(243, 28, 20, 0.7); 
 	}
 </style>
