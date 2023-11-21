@@ -7,18 +7,17 @@
 
 <div class="app">
 	<Header />
-	<br />
+	
 	<sidebarstyle>
 		<Sidebar />
 	</sidebarstyle>
-
+	
 	<slot />
 </div>
 
 <style>
 	.app {
 		display: flex;		
-		flex-direction: column;
-		
+		flex-direction: column;		
 	}
 </style>

@@ -8,14 +8,17 @@
 </svelte:head>
 
 <mainsection>
-	<h1mp>Welcome</h1mp>	
-
-	
+	<h1mp>Welcome</h1mp>		
 	<about-txt>
-		As you can see I am not a frontend developer, not that I don't care for it
-		<br />but as longs as it works <br /> <br /> Im happy :)
+		<b>What to create?</b> <br> <br>
+
+		<p>I want to make something, but ... what? <br>What do people want or what would I enjoy to make?
+		<br>I guess people don't know what they want untill they see it  🤔 <br> <br> <br>
+			<b>Guess I need to look around 🤷‍♂️</b>
+		</p>
+		
 	</about-txt>
-	<date-txt>6.Sep 2023 - Michael</date-txt>	
+	<date-txt>21.Now 2023 - Michael</date-txt>	
 </mainsection>
 
 <style>

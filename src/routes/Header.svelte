@@ -82,11 +82,10 @@
 		grid-template-areas: header;
 		grid-column: 2;
 		grid-row: 1;
-		justify-self: start;
-		border-block-end: solid;
+		justify-self: start;		
 		justify-content: center;
-		opacity: 0.7;
-		--background: var(--color-box);
+		opacity: 0.6;
+		--background: var(--color-box);		
 	}
 
 	ul {

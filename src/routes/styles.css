@@ -95,6 +95,7 @@ about-txt {
 	grid-column-start: 2;
 	grid-column-end: 2;
 	padding-top: 5rem;
+	font-size: 1.3rem;
 }
 
 
@@ -110,12 +111,8 @@ date-txt {
 	text-decoration: underline;	
 	text-underline-position: above;	
 	letter-spacing: 0.1em;
-	padding-top: 9vh;
-	
-	
+	padding-top: 9vh;	
 }
-
-
 
 
 @media only screen and (max-width: 768px) {
