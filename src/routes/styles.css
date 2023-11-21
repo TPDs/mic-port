@@ -64,13 +64,17 @@ mainsection {
 	display: grid;
 	grid-template-rows: 4vh 70vh 2vh;	
 	grid-template-columns: 15rem 40rem;
-	border-width: 0.0em;		
+	border-width: 0.1em;		
 	padding: 1.5em;
 	align-self: center;
+	border-style: solid;
+	border-color: var(--color-text);	
 	border-radius: 0.2rem;
-	height: 85vh;		
+	height: 55rem;		
 	width: 80rem;	
 	background: var(--color-box-inside);
+	
+	
 	
 	
 }
@@ -106,7 +110,7 @@ date-txt {
 	text-decoration: underline;	
 	text-underline-position: above;	
 	letter-spacing: 0.1em;
-	padding-top: 1vh;
+	padding-top: 9vh;
 	
 	
 }
