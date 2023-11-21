@@ -7,7 +7,6 @@
 	<meta name="description" content="TPcoded" />
 </svelte:head>
 
-
 <mainsection>
 	<h1mp>Welcome</h1mp>	
 

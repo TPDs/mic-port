@@ -66,15 +66,14 @@
 		grid-template-columns: 20rem 20rem 20rem;
 		grid-row: 1;
 		grid-column: 1;
-		padding-top: 1.5rem;
+		padding-top: 1.5rem;		
 	}
 	.statusbar-row {
 		text-align: center;
 	}
 
 	.statusbar-row img {
-		height: 60%;
-		width: 60%;
+		height: 1.5rem;	
 		padding-right: 0.5rem;
 		padding-bottom: 0.15rem;
 	}
