@@ -3,8 +3,8 @@
 </script>
 
 <svelte:head>
-	<title>MPcoded</title>
-	<meta name="Project" content="MPcoded" />
+	<title>TPcoded</title>
+	<meta name="Project" content="TPcoded" />
 </svelte:head>
 
 

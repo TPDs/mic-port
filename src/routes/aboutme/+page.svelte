@@ -4,8 +4,8 @@
 </script>
 
 <svelte:head>
-	<title>MPcoded</title>
-	<meta name="description" content="MPcoded" />
+	<title>TPcoded</title>
+	<meta name="description" content="TPcoded" />
 </svelte:head>
 
 
