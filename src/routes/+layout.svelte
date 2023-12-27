@@ -8,17 +8,16 @@
 
 <div class="app">
 	<ViewTransition/>
-	<Header />	
+	<Header/>		
 	<sidebarstyle>
 		<Sidebar />
-	</sidebarstyle>
-	
+	</sidebarstyle>	
 	<slot />
 </div>
 
 <style>
 	.app {
 		display: flex;		
-		flex-direction: column;		
+		flex-direction: column;				
 	}
 </style>

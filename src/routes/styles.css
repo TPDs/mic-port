@@ -63,20 +63,14 @@ sidebarstyle {
 mainsection {	
 	display: grid;
 	grid-template-rows: 4vh 70vh 2vh;	
-	grid-template-columns: 15rem 40rem;
-	border-width: 0.1em;		
-	padding: 1.5em;
+	grid-template-columns: 15rem 40rem;		
+	padding: 1.5em;	
 	align-self: center;
-	border-style: solid;
-	border-color: var(--color-text);	
-	border-radius: 0.2rem;
-	height: 55rem;		
-	width: 80rem;	
-	background: var(--color-box-inside);
-	
-	
-	
-	
+	padding-left: 3%;	
+	height: 50rem;		
+	width: 100rem;	
+	background: var(--color-box-inside);	
+	box-shadow: 0px 0px 2px 2px rgba(27, 27, 27, 0.8);
 }
 
 avatar-img {
@@ -90,6 +84,7 @@ avatar-img {
 
 about-txt {
 	justify-content: center;
+	padding-left: 25%;
 	grid-row-start: 2;
 	grid-row-end: 2;
 	grid-column-start: 2;
@@ -111,7 +106,7 @@ date-txt {
 	text-decoration: underline;	
 	text-underline-position: above;	
 	letter-spacing: 0.1em;
-	padding-top: 9vh;	
+	padding-top: 1vh;	
 }
 
 

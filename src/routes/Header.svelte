@@ -7,7 +7,7 @@
 </script>
 
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<header>
+<header class='sticky top-0'>
 	<div class="statusbar">
 		<div class="statusbar-row">
 			<nav>
@@ -51,19 +51,21 @@
 <style>
 	header {
 		display: grid;
-		width: 80rem;
+		width: 100%;
 		align-self: center;
 		grid-template-columns: auto;
 		grid-template-rows: 4rem;
 		background: var(--color-box);
 		border-radius: 0.01rem;
+		padding-bottom: 0.5rem;
+		padding-top: 0.5rem;
 	}
 
 	.statusbar {
 		display: grid;
 		justify-self: center;
 		position: relative;
-		grid-template-columns: 20rem 20rem 20rem;
+		grid-template-columns: 20rem 60rem 20rem;
 		grid-row: 1;
 		grid-column: 1;
 		padding-top: 1.5rem;		
@@ -102,8 +104,7 @@
 		height: 2rem;
 		display: flex;
 		justify-content: center;
-		align-items: center;
-		padding-left: 4rem;
+		align-items: center;		
 		list-style: none;
 	}
 
