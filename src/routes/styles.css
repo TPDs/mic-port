@@ -20,8 +20,7 @@
 
 body {
 
-	background: linear-gradient(rgba(27, 27, 27) 100%, rgba(27, 27, 27));
-
+	background: linear-gradient(rgba(27, 27, 27) 100%, rgba(27, 27, 27));	
 }
 
 p {
@@ -110,6 +109,26 @@ date-txt {
 	text-decoration: underline;
 	text-underline-position: above;
 	letter-spacing: 0.1em;		
+}
+
+.custom-shape-divider-top-1705533968 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	line-height: 0;
+}
+
+.custom-shape-divider-top-1705533968 svg {
+	position: relative;
+	display: block;
+	width: calc(100% + 1.3px);
+	height: 5px;
+}
+
+.custom-shape-divider-top-1705533968 .shape-fill {
+	fill: #0CE3EBB3;
 }
 
 

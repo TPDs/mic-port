@@ -1,23 +1,25 @@
 <script>
-	import ViewTransition from './navigation.svelte'
+	import ViewTransition from './navigation.svelte';
 	import Header from './Header.svelte';
 	import './styles.css';
 	import '../app.postcss';
-	import Sidebar from './Sidebar.svelte';	
+	import Sidebar from './Sidebar.svelte';
 </script>
 
 <div class="app">
-	<ViewTransition/>
-	<Header/>		
+	<ViewTransition />
+	<Header />
+
 	<sidebarstyle>
 		<Sidebar />
-	</sidebarstyle>	
+	</sidebarstyle>
+
 	<slot />
 </div>
 
 <style>
 	.app {
-		display: flex;		
-		flex-direction: column;				
+		display: flex;
+		flex-direction: column;
 	}
 </style>
