@@ -118,6 +118,7 @@ date-txt {
 	width: 100%;
 	overflow: hidden;
 	line-height: 0;
+	
 }
 
 .custom-shape-divider-top-1705533968 svg {
@@ -125,10 +126,12 @@ date-txt {
 	display: block;
 	width: calc(100% + 1.3px);
 	height: 5px;
+	
 }
 
 .custom-shape-divider-top-1705533968 .shape-fill {
 	fill: #0CE3EBB3;
+	opacity: 0.4;
 }
 
 
