@@ -3,7 +3,7 @@
 	import '../styles.css';
 	import template from '$lib/images/templates/lakefs.png';
 	import template2 from '$lib/images/templates/Lambda.png';
-	export let data: PageData;
+	
 </script>
 
 <svelte:head>
