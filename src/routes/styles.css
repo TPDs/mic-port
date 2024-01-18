@@ -79,7 +79,9 @@ avatar-img {
 	grid-row-end: 2;
 	grid-column-start: 1;
 	grid-column-end: 1;
-	padding-top: 5rem;
+	padding-top: 7rem;	
+	width: 10rem;
+	height: 10rem;	
 	justify-self: center;
 }
 
