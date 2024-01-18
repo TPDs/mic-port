@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { PageServerData } from './$types';
-	export let data: PageServerData;	
-	import '../styles.css';	
+	export let data: PageServerData;
+	import '../styles.css';
 </script>
 
 <svelte:head>
@@ -12,14 +12,26 @@
 <mainsection>
 	<h1mp>Projects</h1mp>
 	<about-txt>
-		<ul>
-			{#each data.records as post}
-				<li> <a href={post.url}> Link </a>
-					{post.name}
-					{post.about_text}  
-				</li>
-			{/each}
-		</ul></about-txt
+		<table class="table-fixed border-separate border-spacing-5">
+			<thead>
+				<tr>
+					<th class="max-w-md mx-auto bg-[#1b1b1b] rounded-xl shadow-md overflow-hidden md:max-w-2xl">Project</th>
+					<th class="max-w-md mx-auto bg-[#1b1b1b] rounded-xl shadow-md overflow-hidden md:max-w-2xl">About</th>									
+				</tr>
+			</thead>
+			<br>
+			<tbody>
+				{#each data.records as post}
+					<tr>
+						<td> <h5mp>{post.name}</h5mp></td>
+						<td> <h5mp>{post.about_text}</h5mp></td>
+						<td> <img src={post.image} alt="404" width="60" height="40"> </td>
+						<td><a href={post.url} class="hmplink"> Link </a></td>
+					</tr>
+					
+				{/each}
+			</tbody>
+		</table></about-txt
 	>
 
 	<date-txt>10.Sep 2023 - Michael</date-txt>

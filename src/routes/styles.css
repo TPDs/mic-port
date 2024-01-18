@@ -64,6 +64,25 @@ h3mp {
 	text-align: left;	
 	text-underline-offset: 0.3em;
 	text-underline-position: below;
+	
+}
+
+.hmplink {
+	font-size: 1.3rem;
+	color: var(--color-text-high);
+	text-align: right;
+	text-decoration: underline;
+	text-underline-offset: 0.3em;
+	text-underline-position: below;
+	padding-left: auto;
+}
+
+h5mp {
+	font-size: 1.3rem;
+	color: var(--color-text);
+	text-align: right;
+	padding-right: 5rem;
+	
 }
 
 sidebarstyle {
