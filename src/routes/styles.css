@@ -6,6 +6,7 @@
 		Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	--font-mono: 'Fira Mono', monospace;
 	--color-text: rgba(12, 227, 235, 0.7);
+	--color-text-high: rgba(12, 227, 235, 1);
 	--color-box: rgba(27, 27, 27);
 	--color-box-inside: rgba(43, 40, 40);
 	--color-text-hover: rgba(12, 228, 235, 0.9);
@@ -39,12 +40,14 @@ h1mp {
 	text-decoration: overline;
 	text-underline-position: above;
 	letter-spacing: 0.2em;
+	font-weight: bold;
 }
 
 h2mp {
 	font-size: 1rem;
 	text-align: center;
 }
+
 
 h3mp {
 	font-size: 1rem;
@@ -53,6 +56,14 @@ h3mp {
 	text-underline-offset: 0.3em;
 	text-underline-position: below;
 
+}
+
+.h4mp {
+	font-size: 1.3rem;
+	color: var(--color-text-high);
+	text-align: left;	
+	text-underline-offset: 0.3em;
+	text-underline-position: below;
 }
 
 sidebarstyle {

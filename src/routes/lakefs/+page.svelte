@@ -11,13 +11,13 @@
 	<meta name="description" content="TPcoded" />
 </svelte:head>
 <mainsection>
-	<h1mp>LakeFs</h1mp>
+	<h1mp>Lake<h class="h4mp">Fs</h></h1mp>
 	<avatar-img>
 		<img src={template} alt="Avatar" />
 		<img src={template2} alt="Avatar" />
 	</avatar-img>
 	<about-txt>
-		<b>LakeFs</b> <br /> <br />
+		<b>Lake<h class="h4mp">Fs</h>  & Lambda</b> <br /> <br />
 
 		<p>
 			<br />Time to try and make some data move with a local LakeFS server and AWS Lambda. <br />
