@@ -4,6 +4,7 @@ import dotenv from 'dotenv';
 import https from 'https';
 import express from "express"
 import { handler } from './build/handler.js';
+import morgan from 'morgan';
 
 dotenv.config();
 
@@ -15,8 +16,12 @@ const httpsOptions = {
   cert: sslcert,
   port: PORT
 };
-const app = express()
 
+const logFilePath = '/mnt/phy/log/morgan.log';
+const logStream = fs.createWriteStream(logFilePath, { flags: 'a' });
+
+const app = express()
+app.use(morgan('dev', { stream: logStream }));
 app.use(handler)
 https.createServer(httpsOptions, app).listen(PORT)
 console.log("Loaded HTTPS config");
