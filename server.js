@@ -21,7 +21,7 @@ const logFilePath = '/mnt/phy/log/morgan.log';
 const logStream = fs.createWriteStream(logFilePath, { flags: 'a' });
 
 const app = express()
-app.use(morgan('dev', { stream: logStream }));
+app.use(morgan('common', { stream: logStream }));
 app.use(handler)
 https.createServer(httpsOptions, app).listen(PORT)
 console.log("Loaded HTTPS config");
