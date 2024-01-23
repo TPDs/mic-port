@@ -2,7 +2,7 @@
 	import type { PageData } from './$types';
 	import '../styles.css';
 	import template from '$lib/images/templates/lakefs.png';
-	import template2 from '$lib/images/templates/Lambda.png';
+	import template2 from '$lib/images/templates/lambda.png';
 	
 </script>
 

@@ -1,8 +1,9 @@
 <script lang="ts">
 	import type { PageServerData } from './$types';
 	export let data: PageServerData;
-	import '../styles.css';
-	import { Image } from "@unpic/svelte";
+	import '../styles.css';	
+	const test = '$lib/images/templates/lakefs.png';
+	
 </script>
 
 <svelte:head>
@@ -32,7 +33,7 @@
 					<tr>
 						<td> <h5mp>{post.name}</h5mp></td>
 						<td> <h5mp>{post.about_text}</h5mp></td>
-						<td> <Image src={post.image} alt=" " width="60" height="40" /></td>
+						<td> <img src={post.image} alt=" "/></td>
 						<td><a href={post.url} class="hmplink"> Link </a></td>
 					</tr>
 				{/each}
