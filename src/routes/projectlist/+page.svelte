@@ -1,8 +1,7 @@
 <script lang="ts">
 	import type { PageServerData } from './$types';
 	export let data: PageServerData;
-	import '../styles.css';	
-	const test = '$lib/images/templates/lakefs.png';
+	import '../styles.css';		
 	
 </script>
 
