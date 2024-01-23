@@ -18,7 +18,6 @@ const httpsOptions = {
 };
 
 const logtype = ':remote-addr, -  :referrer, -  :method, - :url, - :status'
-
 const logFilePath = env.LOG_FILE_PATH;
 const logStream = fs.createWriteStream(logFilePath, { flags: 'a' });
 
