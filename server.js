@@ -17,11 +17,13 @@ const httpsOptions = {
   port: PORT
 };
 
-const logFilePath = '/mnt/phy/log/morgan.log';
+const logtype = ':remote-addr, -  :referrer, -  :method, - :url, - :status'
+
+const logFilePath = env.LOG_FILE_PATH;
 const logStream = fs.createWriteStream(logFilePath, { flags: 'a' });
 
 const app = express()
-app.use(morgan('common', { stream: logStream }));
+app.use(morgan('logtype', { stream: logStream }));
 app.use(handler)
 https.createServer(httpsOptions, app).listen(PORT)
 console.log("Loaded HTTPS config");
