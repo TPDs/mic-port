@@ -1,6 +1,6 @@
 import type { PageServerLoad } from './$types';
 
-export const prerender = true;
+const prerender = true;
 
 export const load: PageServerLoad = async ({ locals }) => {
     const records = await locals.pb.collection('project').getFullList({

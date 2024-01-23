@@ -4,6 +4,8 @@
 	import './styles.css';
 	import '../app.postcss';
 	import Sidebar from './Sidebar.svelte';
+
+	export const prerender = true;
 </script>
 
 <div class="app">
