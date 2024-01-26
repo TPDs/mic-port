@@ -2,7 +2,7 @@
 	import type { PageServerData } from './$types';
 	export let data: PageServerData;
 	import '../styles.css';
-	import Image from "svelte-image";
+	
 
 	async function getAvatar(img: string) {
 		console.log(img);
@@ -41,7 +41,7 @@
 						<td> <h5mp>{post.name}</h5mp></td>
 						<td> <h5mp>{post.about_text}</h5mp></td>
 						
-						<td> <Image src="../lib/images/tempdata/{post.image}.png" alt=" " /></td>
+						<td> <img src="../lib/images/tempdata/{post.image}.png" alt=" " /></td>
 						<td><a href={post.url} class="hmplink"> Link </a></td>
 					</tr>
 				{/each}
