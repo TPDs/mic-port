@@ -1,12 +1,13 @@
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 import adapter from '@sveltejs/adapter-node';
+import image from "svelte-image";
 //import dotenv from 'dotenv';
 
 //dotenv.config();
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-	preprocess: [vitePreprocess({})],
+	preprocess: [vitePreprocess({}), image()],
 	kit: {
 		adapter: adapter({
 			out: 'build',
