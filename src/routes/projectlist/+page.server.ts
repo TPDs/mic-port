@@ -1,5 +1,6 @@
 import type { PageServerLoad } from './$types';
 
+
 const prerender = false; // set to true to enable prerendering
 
 export const load: PageServerLoad = (async ({ locals }) => {

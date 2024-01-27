@@ -2,15 +2,17 @@
 	import type { PageServerData } from './$types';
 	export let data: PageServerData;
 	import '../styles.css';
-	
+	import database from '$lib/images/icon/database.png';
+	import lakefs from '$lib/images/icon/lakefs.png';
+	import spotify from '$lib/images/icon/spotify.png';
+	import lambda from '$lib/images/icon/lambda.png';
 
-	async function getAvatar(img: string) {
-		console.log(img);
-		const images = await new URL (`./lib/images/tempdata/${img}.png`) /* @vite-ignore */
-		console.log(images);
-		return images;
-	}
-
+	const imageMap: { [key: string]: string } = {
+		database: database,
+		lakefs: lakefs,
+		spotify: spotify,
+		lambda: lambda
+	};
 </script>
 
 <svelte:head>
@@ -40,8 +42,7 @@
 					<tr>
 						<td> <h5mp>{post.name}</h5mp></td>
 						<td> <h5mp>{post.about_text}</h5mp></td>
-						
-						<td> <img src="../lib/images/tempdata/{post.image}.png" alt=" " /></td>
+						<td> <img class="w-36" src={imageMap[post.image]} alt=" " /></td>
 						<td><a href={post.url} class="hmplink"> Link </a></td>
 					</tr>
 				{/each}

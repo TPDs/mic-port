@@ -1,8 +1,8 @@
 <script lang="ts">
 	import type { PageData } from './$types';
 	import '../styles.css';
-	import template from '$lib/images/tempdata/lakefs.png';
-	import template2 from '$lib/images/tempdata/lambda.png';
+	import template from '$lib/images/icon/lakefs.png';
+	import template2 from '$lib/images/icon/lambda.png';
 	
 </script>
 

@@ -1,6 +1,6 @@
 <script lang="ts">
 	import './styles.css';
-	import template from '$lib/images/tempdata/spotify.png';
+	import template from '$lib/images/icon/spotify.png';
 </script>
 
 <svelte:head>
