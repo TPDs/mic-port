@@ -27,6 +27,7 @@
 		grid-row: 2;
 		padding-top: 15em;
 		width: 2.2em;  /* Styre size af icons */
+
 		
 		
 	}
@@ -43,10 +44,16 @@
 	.sidebar img {		
 		filter: invert(60%);
 		object-fit: contain;
+		transition: color 0.5s linear;
+		-webkit-transition: all 0.5s ease-out;
+		-moz-transition: all 0.5s ease-out;
+		-o-transition: all 0.5s ease-out;
+		-ms-transition: all 0.5s ease-out;
+		transition: all 0.5s ease-out;
 	}
 	.sidebar img:hover {
 		filter: invert(100%);
 		object-fit: contain;		
-		color: rgba(243, 28, 20, 0.7); 
+		color: rgba(243, 28, 20, 0.7); 		
 	}
 </style>

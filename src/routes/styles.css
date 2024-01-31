@@ -59,12 +59,11 @@ h3mp {
 }
 
 .h4mp {
-	font-size: 1.3rem;
+	font-size: 1.5rem;
 	color: var(--color-text-high);
 	text-align: left;	
-	text-underline-offset: 0.3em;
-	text-underline-position: below;
-	
+	-webkit-font-smoothing: auto;
+	-moz-osx-font-smoothing: auto;
 }
 
 .hmplink {
