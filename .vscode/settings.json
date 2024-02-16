@@ -1,3 +1,10 @@
 {
-    "typescript.tsdk": "node_modules\\typescript\\lib"
+    "typescript.tsdk": "node_modules\\typescript\\lib",
+    "editor.minimap.enabled": false,
+    "editor.hover.above": true,
+    "markdown.preview.scrollPreviewWithEditor": true,
+    "markdown.preview.scrollEditorWithPreview": true,
+    "workbench.editor.restoreViewState": true,
+    "breadcrumbs.enabled": true,
+    "accessibility.voice.keywordActivation": "chatInContext"
 }
