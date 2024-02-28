@@ -8,43 +8,23 @@
 	<meta name="description" content="TPcoded" />
 </svelte:head>
 <mainsection>
-	<h1mp>Spotify?</h1mp>
+	<h1mp>Welcome</h1mp>
 	<avatar-img>
 		<img src={template} alt="Avatar" />
 	</avatar-img>
 	<about-txt>
-		<b>What to create?</b> <br /> <br />
-
+		<br /> <br />
 		<p>
-			I will try to work with the Spotify API abit <br />Just to see what can be done with it and
-			how it works <br /> <br /> <br />
+			<b>Welcome to my site</b> <br /> <br> This site is made to host my individual projects for you to view
+			<br /> I am a software developer and I am currently working on different projects to expand my knowledgebase. 
+			<br> <br>For this site, I have used Sveltekit and Pocketbase, but many of my projects are made with different technologies
+			
 		</p></about-txt
 	>
 	<date-txt>27.Dec 2023 - Michael</date-txt>
 </mainsection>
 
-<mainsection>
-	<h1mp>First</h1mp>
-	<avatar-img>
-		<img src={template} alt="Avatar" />
-	</avatar-img>
-	<about-txt>
-		<b>What to create?</b> <br /> <br />
 
-		<p>
-			I want to make something, but ... what? <br />What do people want or what would I enjoy to
-			make?
-			<br />I guess people don't know what they want untill they see it 🤔 <br /> <br /> <br />
-			<b>Guess I need to look around 🤷‍♂️</b>
-		</p>
-		<br /><br />
-		<p>
-			Think I will do a daily sprint for one project, like a 8h run, to see how I can improve myself
-			and tune my skills with limited time
-		</p>
-	</about-txt>
-	<date-txt>21.Now 2023 - Michael</date-txt>
-</mainsection>
 
 <style>
 </style>

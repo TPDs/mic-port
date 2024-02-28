@@ -15,24 +15,16 @@
 	--column-width: 42rem;
 	--column-margin-top: 4rem;
 	font-family: var(--font-body);
-	color: var(--color-text);	
+	color: var(--color-text);
 }
 
-body {
-	user-select: text;
-	background: linear-gradient(rgba(27, 27, 27) 100%, rgba(27, 27, 27));	
-}
 
 p {
 	font-weight: 400;
+	line-height: 1.5;
 	--font-mono: 'Fira Mono', monospace;
 
 }
-
-p {
-	line-height: 1.5;
-}
-
 
 h1mp {
 	font-size: 1.5rem;
@@ -41,6 +33,7 @@ h1mp {
 	text-underline-position: above;
 	letter-spacing: 0.2em;
 	font-weight: bold;
+	color: var(--color-text);
 }
 
 h2mp {
@@ -59,9 +52,9 @@ h3mp {
 }
 
 .h4mp {
-	font-size: 1.5rem;
+	font-size: 1.5rem;	
 	color: var(--color-text-high);
-	text-align: left;	
+	text-align: left;
 	-webkit-font-smoothing: auto;
 	-moz-osx-font-smoothing: auto;
 }
@@ -81,7 +74,7 @@ h5mp {
 	color: var(--color-text);
 	text-align: right;
 	padding-right: 5rem;
-	
+
 }
 
 sidebarstyle {
@@ -91,14 +84,13 @@ sidebarstyle {
 
 mainsection {
 	display: grid;
-	grid-template-rows: 4vh 70vh 2vh;
-	grid-template-columns: 15rem 40rem;
+	grid-template-rows: 4vh 70vh;
+	grid-template-columns: 15rem 80rem;
 	padding: 1.5em;
-	align-self: center;
-	padding-left: 3%;
-	height: 52rem;
-	width: 100rem;
-	background: var(--color-box-inside);	
+	align-self: center;	
+	height:85vh;
+	width: 85%;	
+	background: var(--color-box-inside);
 	box-shadow: 0px 0px 2px 2px rgba(27, 27, 27, 0.8);
 }
 
@@ -107,28 +99,39 @@ avatar-img {
 	grid-row-end: 2;
 	grid-column-start: 1;
 	grid-column-end: 1;
-	padding-top: 7rem;	
+	padding-top: 7rem;
 	width: 15rem;
-	height: 15rem;	
+	height: 15rem;
 	justify-self: center;
 }
 
 about-txt {
-	justify-content: center;
+	color: var(--color-text);
+	justify-content: center;	
 	padding-left: 5%;
 	grid-row-start: 2;
 	grid-row-end: 2;
 	grid-column-start: 2;
 	grid-column-end: 2;
 	padding-top: 5rem;
-	font-size: 1.3rem;	
-	height: 40rem;	
+	font-size: 1.3rem;
+	height: 40rem;
 	width: 60rem;
 }
+
+content-txt {
+	grid-row-start: 2;
+	grid-row-end: 2;
+	grid-column-start: 2;
+	grid-column-end: 2;
+	padding-top: 3rem;	
+}
+
 
 
 date-txt {
 	justify-content: left;
+	color: var(--color-text);
 	grid-row-start: 3;
 	grid-row-end: 3;
 	grid-column-start: 1;
@@ -138,7 +141,7 @@ date-txt {
 	text-align: left;
 	text-decoration: underline;
 	text-underline-position: above;
-	letter-spacing: 0.1em;		
+	letter-spacing: 0.1em;
 }
 
 .custom-shape-divider-top-1705533968 {
@@ -148,7 +151,7 @@ date-txt {
 	width: 100%;
 	overflow: hidden;
 	line-height: 0;
-	
+
 }
 
 .custom-shape-divider-top-1705533968 svg {
@@ -156,7 +159,7 @@ date-txt {
 	display: block;
 	width: calc(100% + 1.3px);
 	height: 5px;
-	
+
 }
 
 .custom-shape-divider-top-1705533968 .shape-fill {

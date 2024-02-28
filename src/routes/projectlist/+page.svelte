@@ -22,34 +22,34 @@
 
 <mainsection>
 	<h1mp>Projects</h1mp>
-	<about-txt>
-		<table class="table-fixed border-separate border-spacing-5">
-			<thead>
-				<tr>
-					<th
-						class="max-w-md mx-auto bg-[#1b1b1b] rounded-xl shadow-md overflow-hidden md:max-w-2xl"
-						>Project</th
-					>
-					<th
-						class="max-w-md mx-auto bg-[#1b1b1b] rounded-xl shadow-md overflow-hidden md:max-w-2xl"
-						>About</th
-					>
-				</tr>
-			</thead>
-			<br />
-			<tbody>
-				{#each data.records as post}
-					<tr>
-						<td> <h5mp>{post.name}</h5mp></td>
-						<td> <h5mp>{post.about_text}</h5mp></td>
-						<td> <img class="w-36" src={imageMap[post.image]} alt=" " /></td>
-						<td><a href={post.url} class="hmplink"> Link </a></td>
-					</tr>
-				{/each}
-			</tbody>
-		</table></about-txt
-	>
 
+	<content-txt>		
+		<div class="overflow-x-auto">
+			<table class="table table-xs">
+				<thead>
+					<tr class="text-left">
+						<th>Name</th>
+						<th>About</th>
+						<th>Updated</th>
+						<th>Link</th>
+						<th>Git</th>
+					</tr>
+				</thead>
+				<br />
+				<tbody
+					>{#each data.records as post}
+						<tr class="justify-content-between">
+							<td>{post.name}</td>
+							<td>{post.about_text}</td>
+							<td>{post.updated}</td>
+							<td><a class="link link-accent" href={post.url}> Link </a></td>
+							<td><a class="link link-accent" href={post.url}> Readme </a></td>
+						</tr>
+					{/each}
+				</tbody>
+			</table>
+		</div>	
+	</content-txt>
 	<date-txt>23.Jan 2024 - Michael</date-txt>
 </mainsection>
 

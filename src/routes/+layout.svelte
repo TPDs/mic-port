@@ -4,22 +4,22 @@
 	import './styles.css';
 	import '../app.postcss';
 	import Sidebar from './Sidebar.svelte';
+	
 </script>
 
 <div class="app">
 	<ViewTransition />
 	<Header />
-
 	<sidebarstyle>
 		<Sidebar />
 	</sidebarstyle>
-
-	<slot />
+	<slot />	
 </div>
 
 <style>
 	.app {
 		display: flex;
 		flex-direction: column;
+				
 	}
 </style>

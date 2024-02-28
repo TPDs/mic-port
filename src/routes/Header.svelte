@@ -69,8 +69,7 @@
 		width: 100%;
 		align-self: center;
 		grid-template-columns: auto;
-		grid-template-rows: 4rem;
-		background: var(--color-box);
+		grid-template-rows: 4rem;		
 		border-radius: 0.01rem;
 		padding-bottom: 0.5rem;
 		padding-top: 0.5rem;
@@ -102,7 +101,7 @@
 		justify-self: start;		
 		justify-content: center;
 		opacity: 0.6;
-		--background: var(--color-box);		
+			
 	}
 
 	ul {
