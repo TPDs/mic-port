@@ -13,6 +13,10 @@
 		spotify: spotify,
 		lambda: lambda
 	};
+
+	function toggleExpansion(post:any) {
+		post.expanded = !post.expanded;
+	}
 </script>
 
 <svelte:head>
@@ -22,8 +26,7 @@
 
 <mainsection>
 	<h1mp>Projects</h1mp>
-
-	<content-txt>		
+	<content-txt>
 		<div class="overflow-x-auto">
 			<table class="table table-xs">
 				<thead>
@@ -38,20 +41,34 @@
 				<br />
 				<tbody
 					>{#each data.records as post}
-						<tr class="justify-content-between">
+						<tr
+							class="justify-content-between on:click={() =>	toggleExpansion(post)} class:bg-transparent hover:bg-gray-100 dark:hover:bg-gray-800 dark:bg-transparent">
 							<td>{post.name}</td>
 							<td>{post.about_text}</td>
 							<td>{post.updated}</td>
 							<td><a class="link link-accent" href={post.url}> Link </a></td>
 							<td><a class="link link-accent" href={post.url}> Readme </a></td>
 						</tr>
+						{#if post.expanded}
+							<tr>
+								<td colspan="5">									
+									Additional Content for {post.name}
+								</td>
+							</tr>
+						{/if}
 					{/each}
 				</tbody>
 			</table>
-		</div>	
+		</div>
 	</content-txt>
 	<date-txt>23.Jan 2024 - Michael</date-txt>
 </mainsection>
 
 <style>
+
+	tr.expanded td {
+    transition: max-height 0.3s ease-out;
+    max-height: 10rem;
+    overflow: hidden;
+  }
 </style>

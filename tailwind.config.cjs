@@ -7,7 +7,7 @@ const config = {
 
 	plugins: [require('daisyui')],
 	daisyui: {
-		themes: ["light", "dark", "cupcake"], // false: only light + dark | true: all themes | array: specific themes like this ["light", "dark", "cupcake"]		
+		themes: ["business"], // false: only light + dark | true: all themes | array: specific themes like this ["light", "dark", "cupcake"]		
 		base: true, // applies background color and foreground color for root element by default
 		styled: true, // include daisyUI colors and design decisions for all components
 		utils: true, // adds responsive and modifier utility classes
@@ -15,7 +15,7 @@ const config = {
 		logs: true, // Shows info about daisyUI version and used config in the console when building your CSS
 		themeRoot: ":root",
 	},
-	
+
 
 };
 
