@@ -14,9 +14,6 @@
 		lambda: lambda
 	};
 
-	function toggleExpansion(post:any) {
-		post.expanded = !post.expanded;
-	}
 </script>
 
 <svelte:head>
@@ -37,25 +34,18 @@
 						<th>Link</th>
 						<th>Git</th>
 					</tr>
-				</thead>
-				<br />
+				</thead>				
 				<tbody
 					>{#each data.records as post}
 						<tr
-							class="justify-content-between on:click={() =>	toggleExpansion(post)} class:bg-transparent hover:bg-gray-100 dark:hover:bg-gray-800 dark:bg-transparent">
+							class="class:bg-transparent hover:bg-gray-100 dark:hover:bg-gray-800 dark:bg-transparent">
 							<td>{post.name}</td>
 							<td>{post.about_text}</td>
 							<td>{post.updated}</td>
 							<td><a class="link link-accent" href={post.url}> Link </a></td>
 							<td><a class="link link-accent" href={post.url}> Readme </a></td>
-						</tr>
-						{#if post.expanded}
-							<tr>
-								<td colspan="5">									
-									Additional Content for {post.name}
-								</td>
-							</tr>
-						{/if}
+							
+						</tr>				
 					{/each}
 				</tbody>
 			</table>
