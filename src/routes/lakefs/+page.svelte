@@ -25,8 +25,8 @@
 					<tr class="text-left">
 						<th>Ip</th>
 						<th>Country</th>
-						<th>payload</th>
-						<th>timestamp</th>
+						<th>Payload</th>
+						<th>Timestamp</th>
 						<th>CVE</th>
 					</tr>
 				</thead>
