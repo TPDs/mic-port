@@ -43,8 +43,7 @@
 							<td>{post.about_text}</td>
 							<td>{post.updated}</td>
 							<td><a class="link link-accent" href={post.url}> Link </a></td>
-							<td><a class="link link-accent" href={post.url}> Readme </a></td>
-							
+							<td><a class="link link-accent" href={post.url}> Readme </a></td>							
 						</tr>				
 					{/each}
 				</tbody>
@@ -56,9 +55,5 @@
 
 <style>
 
-	tr.expanded td {
-    transition: max-height 0.3s ease-out;
-    max-height: 10rem;
-    overflow: hidden;
-  }
+
 </style>
