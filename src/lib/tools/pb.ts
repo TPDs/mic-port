@@ -1,6 +1,7 @@
 import PocketBase from 'pocketbase';
-import { env } from '$env/dynamic/public';
+import { env } from '$env/dynamic/private';
 
-export const pb = new PocketBase(env.PUBLIC_PB_URL);
-export const authData =  pb.admins.authWithPassword(env.PUBLIC_PB_ADMIN as string , env.PUBLIC_PB_PW as string);
+
+export const pb = new PocketBase(env.PRIVATE_PB_URL);
+export const authData =  pb.admins.authWithPassword(env.PRIVATE_PB_ADMIN as string , env.PRIVATE_PB_PW as string);
 
